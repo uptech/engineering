@@ -1,0 +1,15 @@
+base_url = "https://engineering-playbook.upte.ch"
+compile_sass = true
+title = "UpTech Works - Engineering Playbook"
+build_search_index = true
+
+taxonomies = [
+    {name = "tags", rss = true},
+    {name = "authors", rss = true},
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "kronuz"
+
+[extra]
