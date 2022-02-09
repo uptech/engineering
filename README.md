@@ -27,6 +27,8 @@ Images and other files that you want to use in your Markdown or share should be 
 
 If on the other hand you have images/files that are shared across multiple pages you can put them in the top level `static` folder. Try and have some useful naming and organization there though.
 
+Images should be optimized using [ImageOptim](https://imageoptim.com/howto.html) before adding them to the git repository.
+
 ## Test Changes Locally
 
 Given that this repository is statically generator you will need to install the static site generator, [Zola][]. Don't worry though it is a single binary with no dependencies. So it is as easy as the following.
