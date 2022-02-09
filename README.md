@@ -1,8 +1,14 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a744af4-6dd8-4fc2-b83f-95909a44bca4/deploy-status)](https://app.netlify.com/sites/uptech-engineering-playbook/deploys)
+
 # Engineering Playbook
 
 Welcome to our Engineering Playbook. It houses all of standards and best practices that we have honed in on over the years.
 
 This is very much a living and breathing thing that is welcome to change over time. So if you have strong opinions about any covered or not covered here and are willing to discuss & debate to try and find the ideal path. Please open a Pull Request to this repository with your proposed addition/modification.
+
+## Hosted
+
+The Engineering Playbook is hosted via Netlify at [https://engineering-playbook.upte.ch](https://engineering-playbook.upte.ch).
 
 ## Contribution Process
 
