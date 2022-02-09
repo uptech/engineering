@@ -1,12 +1,12 @@
 +++
-title = "Branching Strategies"
+title = "Versioning"
 date = 2020-01-18 # or weight 
-description = "Description"
+description = "todo"
 insert_anchor_links = "right"
 
 [taxonomies] #all taxonomies is optional
-tags = ["newtag"]
+tags = ["todo"]
 authors = ["John Doe"]
 +++
 
-This is the branching strategies page or section.
+TODO

@@ -1,12 +1,12 @@
 +++
-title = "Releasing"
+title = "Branching Strategies"
 date = 2020-01-18 # or weight 
-description = "Description"
+description = "todo"
 insert_anchor_links = "right"
 
 [taxonomies] #all taxonomies is optional
-tags = ["newtag"]
+tags = ["todo"]
 authors = ["John Doe"]
 +++
 
-This is the Releasing page or section.
+TODO
