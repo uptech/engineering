@@ -21,6 +21,12 @@ There are a few different types of content.
 - **hierarchy** - this is done by adding a folder that other pages will live in. To do this simply create a folder with the slug (dashed name) you want. Then inside that folder create a `_index.md` file with the front-matter. The `content/TODO/_index.md` is an example of this type of content. It is there to add hiearchy to the organization of the information.
 - **page** - this is done by creating a folder with the slug (dashed name) you want. Then inside that folder create a `index.md` file with the front-matter. The `content/git-commit/index.md` file is an example of this type of content. It is here to house the actual page contents in [CommonMark][] as well as the associated meta-data.
 
+### Images/etc.
+
+Images and other files that you want to use in your Markdown or share should be placed in the folder for that page. You can look at the `squads-and-guilds` page folder as it has images. These images are unique to this page.
+
+If on the other hand you have images/files that are shared across multiple pages you can put them in the top level `static` folder. Try and have some useful naming and organization there though.
+
 ## Test Changes Locally
 
 Given that this repository is statically generator you will need to install the static site generator, [Zola][]. Don't worry though it is a single binary with no dependencies. So it is as easy as the following.
