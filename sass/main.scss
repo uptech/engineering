@@ -72,17 +72,30 @@ pre {
   border-radius: 4px;
 }
 
-a:link {
+.theme-light a:link {
   text-decoration: none;
-	color:aquamarine;
+	color:#1FAFA0;
 }
 
-a:hover {
+.theme-light a:hover {
   @include color(color, --second-text-color, $theme-light-second-text-color);
 }
 
-a:visited {
-	color:teal;
+.theme-light a:visited {
+	color:#078991;
+}
+
+.theme-dark a:link {
+  text-decoration: none;
+	color:#57D8BD;
+}
+
+.theme-dark a:hover {
+  @include color(color, --second-text-color, $theme-light-second-text-color);
+}
+
+.theme-dark a:visited {
+	color:#9BCAC9;
 }
 
 h1, h2, h3, h4, h5, h6 {
