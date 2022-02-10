@@ -13,6 +13,8 @@ taxonomies = [
 
 # theme = "book"
 
+# theme = "zola_easydocs_theme"
+
 [markdown]
 highlight_code = true
 highlight_theme = "kronuz"
