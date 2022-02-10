@@ -17,9 +17,9 @@ html {
 }
 
 $theme-light-first-text-color: #444;
-$theme-dark-first-text-color: #888;
+$theme-dark-first-text-color: #E1E1E1;
 $theme-light-second-text-color: #999;
-$theme-dark-second-text-color: #666;
+$theme-dark-second-text-color: #E1E1E1;
 $theme-light-bg-color:#fafafa;
 $theme-dark-bg-color:#262626;
 
@@ -87,15 +87,16 @@ pre {
 
 .theme-dark a:link {
   text-decoration: none;
-	color:#57D8BD;
+	color:#1DC9A1;
 }
 
 .theme-dark a:hover {
-  @include color(color, --second-text-color, $theme-light-second-text-color);
+	color: #ACF2E2;
+  // @include color(color, --second-text-color, $theme-light-second-text-color);
 }
 
 .theme-dark a:visited {
-	color:#9BCAC9;
+	color:#C39EF2;
 }
 
 h1, h2, h3, h4, h5, h6 {
