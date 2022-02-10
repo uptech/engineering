@@ -49,11 +49,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="{{ get_url(path="docs", trailing_slash=true) | safe }}">Docs</a>
 				</li>
-                {% if extra.blog %}
 				<li class="nav-item">
 					<a class="nav-link" href="{{ get_url(path="blog", trailing_slash=true) | safe }}">Blog</a>
 				</li>
-                {% endif %}
 				{% endif %}
 			</ul>
 			<div class="break order-6 d-md-none"></div>
