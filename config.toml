@@ -11,6 +11,8 @@ taxonomies = [
 
 # theme = "adidoks"
 
+# theme = "book"
+
 [markdown]
 highlight_code = true
 highlight_theme = "kronuz"
