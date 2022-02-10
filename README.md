@@ -4,7 +4,7 @@
 
 Welcome to our Engineering Playbook. It houses all of standards and best practices that we have honed in on over the years.
 
-This is very much a living and breathing thing that is welcome to change over time. So if you have strong opinions about any covered or not covered here and are willing to discuss & debate to try and find the ideal path. Please open a Pull Request to this repository with your proposed addition/modification.
+This is very much a living and breathing thing that is welcome to change over time. So if you have strong opinions about anything covered or not covered here and are willing to discuss & debate to try and find the best approaches. Please open a Pull Request to this repository with your proposed addition/modification.
 
 ## Hosted
 
@@ -12,7 +12,7 @@ The Engineering Playbook is hosted via Netlify at [https://engineering-playbook.
 
 ## Contribution Process
 
-It is simple you just open a Pull Request with your proposed change and debate and discussion happens around your proposed change until a conclusion is made. It might be your exact change that makes it in, or it might be a varient of your change that makes it in, or maybe your change gets rejected with an explanation of why. You are always welcome to continue discussions / re-open topics that have been rejected if you discover more information or learnings that help support your position.
+The contribution process is simple you just open a Pull Request with your proposed change and debate and discussion happens around your proposed change until a conclusion is made. It might be your exact change that makes it in, or it might be a varient of your change that makes it in, or maybe your change gets rejected with an explanation of why. You are always welcome to continue discussions / re-open topics that have been rejected if you discover more information or learnings that help support your position.
 
 ## Content
 
