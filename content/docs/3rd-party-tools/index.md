@@ -1,12 +1,16 @@
 +++
 title = "3rd Party Tools"
-date = 2022-02-09 # or weight 
 description = "A breakdown of 3rd party tools we use"
-insert_anchor_links = "right"
+date = 2021-05-01T18:20:00+00:00
+updated = 2021-05-01T18:20:00+00:00
+draft = false
+weight = 420
+sort_by = "weight"
+template = "docs/page.html"
 
-[taxonomies] #all taxonomies is optional
-tags = ["tools"]
-authors = ["Drew De Ponte"]
+[extra]
+toc = true
+top = false
 +++
 
 The following is a breakdown of 3rd Party tools that we use and a small bit of information on what we use them for.

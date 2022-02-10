@@ -1,12 +1,16 @@
 +++
 title = "Git Commit"
-date = 2022-02-09 # or weight 
 description = "A breakdown of how we think about Git Commits and what our standards are when creating them."
-insert_anchor_links = "right"
+date = 2021-05-01T18:20:00+00:00
+updated = 2021-05-01T18:20:00+00:00
+draft = false
+weight = 420
+sort_by = "weight"
+template = "docs/page.html"
 
-[taxonomies] #all taxonomies is optional
-tags = ["git"]
-authors = ["Drew De Ponte"]
+[extra]
+toc = true
+top = false
 +++
 
 The Git commit is probably the most fundamental unit we have to manage the growth and evolution of our source code. Git commits can be extremely useful sometimes and other times they can be useless. The following are the guidelines we have honed in to over the years to help make sure that our commits end up being the valuable kind.

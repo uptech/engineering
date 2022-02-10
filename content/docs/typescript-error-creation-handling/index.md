@@ -1,12 +1,16 @@
 +++
 title = "TypeScript Error Creation & Handling"
-date = 2022-02-09 # or weight 
 description = "Quick Review with Examples of TypeScript Error Creation & Handling"
-insert_anchor_links = "right"
+date = 2021-05-01T18:20:00+00:00
+updated = 2021-05-01T18:20:00+00:00
+draft = false
+weight = 420
+sort_by = "weight"
+template = "docs/page.html"
 
-[taxonomies] #all taxonomies is optional
-tags = ["code"]
-authors = ["Drew De Ponte"]
+[extra]
+toc = true
+top = false
 +++
 
 ```TypeScript

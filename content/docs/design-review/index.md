@@ -1,12 +1,16 @@
 +++
 title = "Design Review"
-date = 2022-02-09 # or weight 
 description = "Overview of Design Reviews, what they are, when they are done, etc."
-insert_anchor_links = "right"
+date = 2021-05-01T18:20:00+00:00
+updated = 2021-05-01T18:20:00+00:00
+draft = false
+weight = 420
+sort_by = "weight"
+template = "docs/page.html"
 
-[taxonomies] #all taxonomies is optional
-tags = ["process"]
-authors = ["Claude Ciocan"]
+[extra]
+toc = true
+top = false
 +++
 
 This document describes how and when a software design review should take place.

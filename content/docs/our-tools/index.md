@@ -1,12 +1,16 @@
 +++
 title = "Our Tools"
-date = 2022-02-09 # or weight 
 description = "A breakdown of our custom tools"
-insert_anchor_links = "right"
+date = 2021-05-01T18:20:00+00:00
+updated = 2021-05-01T18:20:00+00:00
+draft = false
+weight = 420
+sort_by = "weight"
+template = "docs/page.html"
 
-[taxonomies] #all taxonomies is optional
-tags = ["tools"]
-authors = ["Drew De Ponte"]
+[extra]
+toc = true
+top = false
 +++
 
 Here at UpTech we like to focus on doing the best work we can. This involves a lot of personal growth over time to become true craftsman at our trade. To aid in this process we often build our own tooling or hone existing tools and libraries. Below are some quick summaries of the various tools we have built and their respective impetus.
