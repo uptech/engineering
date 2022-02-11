@@ -1,10 +1,10 @@
 +++
-title = "Organization"
-description = "Things relating to how we organize people"
+title = "Process"
+description = "The process we follow"
 date = 2025-05-01T18:00:00+00:00
 updated = 2021-05-01T18:00:00+00:00
 template = "docs/section.html"
 sort_by = "weight"
-weight = 1
+weight = 2
 draft = false
 +++
