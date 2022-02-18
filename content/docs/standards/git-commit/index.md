@@ -15,7 +15,7 @@ top = false
 
 The Git commit is probably the most fundamental unit we have to manage the growth and evolution of our source code. Git commits can be extremely useful sometimes and other times they can be useless. The following are the guidelines we have honed in to over the years to help make sure that our commits end up being the valuable kind.
 
-## A Logical & Purposeful, Buildable, Testable Unit
+## A Logical, Buildable, Testable Unit
 
 **Each commit should be a logical unit.** This means it should include only changes related to that logical unit. This includes related code changes, automated test changes, tooling changes, etc. This is **crucial** to suppoort the ability to easily revert changes when necessary. It also is crucial for aiding in doing any sort of git commit tree spelunking.
 
