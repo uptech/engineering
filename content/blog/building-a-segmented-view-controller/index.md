@@ -1,6 +1,6 @@
 +++
 title = "Building a SegmentedViewController"
-description = "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+description = "Walkthrough of buliding a SegementedViewController."
 date = 2016-12-16T10:43:02-08:00
 updated = 2016-12-16T10:43:02-08:00
 draft = false
