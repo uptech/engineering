@@ -1,6 +1,6 @@
-base_url = "https://engineering-playbook.upte.ch"
+base_url = "https://engineering.upte.ch"
 compile_sass = true
-title = "UpTech Works, LLC - Engineering Playbook"
+title = "UpTech Works, LLC - Engineering"
 build_search_index = true
 
 # theme = "zola_docsascode_theme"

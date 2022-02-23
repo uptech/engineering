@@ -15,6 +15,11 @@ section = "docs"
 name = "Docs"
 url = "/docs/welcome"
 
+[[extra.menu.main]]
+section = "blog"
+name = "Blog"
+url = "/blog"
+
 [[extra.list]]
 title = "Process"
 content = "Begin to understand the various processes we follow through the lifecycle of projects and why chose those processes."
