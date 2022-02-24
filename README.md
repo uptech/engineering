@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0a744af4-6dd8-4fc2-b83f-95909a44bca4/deploy-status)](https://app.netlify.com/sites/uptech-engineering-playbook/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0a744af4-6dd8-4fc2-b83f-95909a44bca4/deploy-status)](https://app.netlify.com/sites/uptechstudio-engineering/deploys)
 
 # Engineering Playbook
 
