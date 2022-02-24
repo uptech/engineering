@@ -1,21 +1,21 @@
 {% macro resource() %}
-  <link rel="preload" as="font" href="{{ get_url(path="fonts/vendor/jost/jost-v4-latin-regular.woff2") | safe }}" type="font/woff2" crossorigin>
-  <link rel="preload" as="font" href="{{ get_url(path="fonts/vendor/jost/jost-v4-latin-700.woff2") | safe }}"  type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
 {% endmacro %}
 
 
 {% macro stylesheet() %}
-<link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+<link rel="stylesheet" href="/main.css">
 {% endmacro %}
 
 
 {% macro favicons() %}
   <meta name="theme-color" content="{{ config.extra.theme_color | default(value="#fff") }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="apple-touch-icon.png") | safe }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="favicon-32x32.png") | safe }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") | safe }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   {% if not config.extra.is_netlify %}
-    <link rel="manifest" href="{{ get_url(path="site.webmanifest") | safe }}" crossorigin>
+    <link rel="manifest" href="/site.webmanifestl) | safe }}" crossorigin>
   {% endif %}
 {% endmacro %}
 
@@ -64,14 +64,14 @@
   <meta name="twitter:card" content="summary_large_image">
   {% if page.extra.images %}
     {% for image in page.extra.images %}
-      <meta property="twitter:image" content="{{ get_url(path=image) | safe }}">
+      <meta property="twitter:image" content="/{{ image | safe }}">
     {% endfor %}
   {% elif section.extra.images %}
     {% for image in section.extra.images %}
-      <meta property="twitter:image" content="{{ get_url(path=image) | safe }}">
+      <meta property="twitter:image" content="/{{ image | safe }}">
     {% endfor %}
   {% elif config.extra.open.image %}
-    <meta name="twitter:image" content="{{ config.base_url | safe }}/{{ config.extra.open.image }}">
+    <meta name="twitter:image" content="/{{ config.extra.open.image }}">
   {% endif %}
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
@@ -85,14 +85,14 @@
 
   {% if page.extra.images %}
     {% for image in page.extra.images %}
-      <meta property="og:image" content="{{ get_url(path=image) | safe }}">
+      <meta property="og:image" content="/{{ image | safe }}">
     {% endfor %}
   {% elif section.extra.images %}
     {% for image in section.extra.images %}
-      <meta property="og:image" content="{{ get_url(path=image) | safe }}">
+      <meta property="og:image" content="/{{ image | safe }}">
     {% endfor %}
   {% elif config.extra.open.image %}
-    <meta property="og:image" content="{{ config.base_url | safe }}/{{ config.extra.open.image }}">
+    <meta property="og:image" content="/{{ config.extra.open.image }}">
   {% endif %}
 
   <meta property="og:updated_time" content="{{ updated_time }}">
@@ -108,7 +108,7 @@
 
   {% if config.extra.open.videos %}
     {% for video in config.extra.open.videos %}
-      <meta property="og:video" content="{{ get_url(path=video) }}">
+      <meta property="og:video" content="/{{ video | safe }}">
     {% endfor %}
   {% endif %}
   <meta property="article:publisher" content="https://www.facebook.com/{{ config.extra.open.facebook_publisher }}">
@@ -200,7 +200,7 @@
 
 {% set url_prefix = get_url(path="/") | split(pat="://") | first %}
 {% set url_main = get_url(path="/") | split(pat="://") | last %}
-{% set url_item = url_prefix ~ "://" ~ url_main ~ "/" %}
+{% set url_item = "/" %}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
