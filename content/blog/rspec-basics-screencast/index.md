@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-rspec.png"
 +++
 
 This is yet another screencast I dug up while cleaning out some of the digital clutter. This one provides a great basic walk through of outside in development despite using a sligtly older version of RSpec. The biggest difference in RSpec versions at this point is the way expections are written. In this screencast it references the old style:

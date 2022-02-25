@@ -22,6 +22,9 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="h3"><a class="stretched-link text-body" href="{{ page.permalink }}">{{ page.title }}</a></h2>
+                {{ macros_publish::page_publish_metadata(page=page) }}
+                <div style="display: flex;">
+                {% if page.extra.thumbnail %} <img src="{{ page.extra.thumbnail }}" class="post-thumbnail" /> {% endif %}
                 {% if page.extra.lead %}
                   <p class="lead">{{ page.extra.lead | safe }}</p>
                 {% elif page.description %}
@@ -29,7 +32,7 @@
                 {% else %}
                   <p class="lead">{{ page.content | striptags | truncate(length=250) | safe }}</p>
                 {% endif %}
-                {{ macros_publish::page_publish_metadata(page=page) }}
+                </div>
               </div>
             </div>
             {% endfor %}

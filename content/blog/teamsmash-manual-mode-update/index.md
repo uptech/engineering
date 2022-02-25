@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["ryanhedges"]
+thumbnail = "/img/posts/thumbnails/logo-teamsmash.png"
 +++
 
 If you don't already know, UpTech has created a Mac App to help teams stay connected through photos. It's a very useful app and it has provided us a lot of fun and comradery as we use it every day.

@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
 I just released [Git Patch Stack][] v0.5.0. To update simply run the following:

@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-pra.png"
 +++
 
 It is Sunday, Feb 17th, 2019 at 10:58 pm and I have just submitted the **Minimal Free Version** of [Pra][] to the Apple App Store for review. I post in our team Slack channel that I've submitted and I cross my fingers as we wait for Apple to respond.

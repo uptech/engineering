@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-pra.png"
 +++
 
 While I am waiting to collect information from the [survey](/blog/pull-request-notifications-an-anti-pattern/), I started thinking about how I could make money with Pra. I thought about it before at a high level. But now I have started thinking about it in more depth.

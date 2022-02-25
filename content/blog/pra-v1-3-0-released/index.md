@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-pra.png"
 +++
 
 This release includes a mix of foundational features, small improvement features, as well as some bug fixes, performance improvements, etc.

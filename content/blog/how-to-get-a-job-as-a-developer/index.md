@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["ryanhedges"]
+thumbnail = "/img/posts/thumbnails/logo-google-slide.png"
 +++
 
 I recently had the privilege of representing UpTech to the students at [LearningFuze](https://learningfuze.com/) by presenting my thoughts and experiences surrounding finding a job as a developer. We had such a great time talking with the students and received some great feedback on how the presentation helped them.

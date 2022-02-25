@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["philipjohnson"]
+thumbnail = "/img/posts/thumbnails/logo-pullwalla-macos-big-sur.png"
 +++
 
 ## Pra is now Pullwalla!

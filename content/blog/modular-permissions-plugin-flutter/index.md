@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["jonholtan"]
+thumbnail = "/img/posts/thumbnails/logo-flutter-dart-plugin.png"
 +++
 
 On mobile (Android, iOS), developers have to ask the user to access certain runtime features. These permissions typically include the user's location, the user's contacts, or a plethora of others. Generally, when we think of cross-platform, we think of one size fits all plugins. This approach is anticipated in the Flutter plugin ecosystem. However, when it comes to permissions, this idea breaks down. 

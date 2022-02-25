@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
 Git was created by Linus Torvalds out of a need. At the time the Linux Kernel team was using a proprietary Distributed Source Control Management (DSCM) system. However, due to licensing issues the Linux Kernel team could no longer use this proprietary DSCM system. Therefore, Linus decided to build Git as the DSCM system he always wished they had.

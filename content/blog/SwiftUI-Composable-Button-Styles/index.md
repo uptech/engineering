@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-swiftui.png"
 +++
 
 One frustrating/annoying things about SwiftUI Buttons for me has been the

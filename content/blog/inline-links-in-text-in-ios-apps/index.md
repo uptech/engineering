@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-ios10.png"
 +++
 
 Today, I was working on a client project. As usual a couple of  designers had done some high fidelity designs in [Sketch](https://www.sketchapp.com) that I was riffing off. In the designs on the Sign Up screen near the bottom there was the classic notice stating that by signing up you are agreeing to the **User Agreement** and **Privacy Policy**.

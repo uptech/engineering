@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-cucumber.png"
 +++
 
 This is another screencast I dug up while cleaning out some of the digital clutter in my life. This one still provides a great basic walk through of how to properly define acceptance tests and use them to drive out code with Cucumber.

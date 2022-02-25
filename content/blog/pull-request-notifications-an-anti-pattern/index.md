@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
 Back in 2013, I was lead of a software development team at ReachLocal, Inc. At the time we were using GitHub for open source projects and Atlassian Stash for our private Git repositories.

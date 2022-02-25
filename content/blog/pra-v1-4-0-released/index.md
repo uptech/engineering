@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-pra.png"
 +++
 
 Version v1.4.0 of Pra just made it to the App Store. 

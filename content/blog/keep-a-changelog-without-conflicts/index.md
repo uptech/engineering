@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
 For years, like many others, we have maintained `CHANGELOG.md` files inside our

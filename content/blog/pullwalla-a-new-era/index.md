@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-pullwalla-macos-big-sur.png"
 +++
 
 Woot woot! The first couple releases of the year are out 🎉. These releases include major features as well as important bug fixes.

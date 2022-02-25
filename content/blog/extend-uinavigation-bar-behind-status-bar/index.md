@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["ryanhedges"]
+thumbnail = "/img/posts/thumbnails/logo-ios10.png"
 +++
 
 You might find yourself in an situation where you want to use the

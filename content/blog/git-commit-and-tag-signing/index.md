@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-gnupg.png"
 +++
 
 I believe that there is a large gap in current development practices in terms of association of identity and source code. This is something that a large percentage of people have been ignoring for quite some time. I was one of those people until recently. I started asking myself the question: How hard would it be for someone to write code and claim me as the author, basically forging code in my name? I realized that it was as simple as someone setting their authorship email and name in their `.gitconfig` to the values of my email address and name.

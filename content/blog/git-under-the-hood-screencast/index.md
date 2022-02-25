@@ -7,6 +7,7 @@ template = "blog/page.html"
 
 [extra]
 authors = ["drewdeponte"]
+thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
 Back in 2013 I did a series of screencasts with a good friend of mine, [Brian Miller](https://www.linkedin.com/in/brimil01). I was going through things trying to remove some of the digital clutter and noise in my life. In the process I found this screencast and realized it is still very applicable today. Therefore, I figured I might as well share it.
