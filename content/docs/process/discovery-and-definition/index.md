@@ -19,4 +19,4 @@ The goal of this phase is to get a decent understanding of what the project shou
 
 This is generally done through a series of meetings between the stake holders and Uptech Studio Product, Engineering, and Design representatives. This is where we combine what we know the client wants with our knowledge and expertise to eventually result in what we are actually going to build for them. This is also often where we pose questions or push back on the client to identify if ideas have been vetted and tested to make sure that their money will be well invested.
 
-Once we have these meetings and have come to a conclusion as to what the product should be and what our initial scope will be we move onto the next phase, [Project Planning](/docs/project-planning/).
+Once we have these meetings and have come to a conclusion as to what the product should be and what our initial scope will be we move onto the next phase, [Estimations](/docs/process/estimations/).
