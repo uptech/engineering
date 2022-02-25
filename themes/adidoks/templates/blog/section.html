@@ -23,7 +23,12 @@
               <div class="card-body">
                 <h2 class="h3"><a class="stretched-link text-body" href="{{ page.permalink }}">{{ page.title }}</a></h2>
                 {% if page.extra.lead %}
-                  <p class="lead">{{ page.extra.lead | safe }}</p>{% elif page.description %}<p class="lead">{{ page.description | safe }}</p>{% endif %}
+                  <p class="lead">{{ page.extra.lead | safe }}</p>
+                {% elif page.description %}
+                  <p class="lead">{{ page.description | safe }}</p>
+                {% else %}
+                  <p class="lead">{{ page.content | striptags | truncate(length=250) | safe }}</p>
+                {% endif %}
                 {{ macros_publish::page_publish_metadata(page=page) }}
               </div>
             </div>
