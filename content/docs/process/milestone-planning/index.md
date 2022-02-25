@@ -50,3 +50,9 @@ Once completed the Tech Lead schedules a design review (same process as before) 
 ## Kick-off Meeting
 
 Once the Design Review process is complete. The Tech Lead schedules a kick-off meeting for the Squad. This has the same purpose as before. It is to get everyone comfortable with everything and provide a venue for people to raise concerns, ask questions, etc.
+
+## Task Breakout
+
+One thing that different Squads tend to do differently is task breakout. Some Squads have an extra step here after the kick-off meeting where they schedule a meeting with Squad Product representative and the Engineers on the Squad and go through the tickets in the Milestone and breakout sub-tasks for each of the stories.
+
+Other Squads don't do this meeting and instead leave the task breakout to the Engineer that grabs the story. We don't have strong opinions on this. It is really whatever the Squad is comfortable with. The key is that our Squads are constantly self evaluating so if there is a problem in this area they can quickly adjust.
