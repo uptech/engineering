@@ -4,7 +4,9 @@ date = 2018-11-09T09:32:01-08:00
 updated = 2018-11-09T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 ## Why?

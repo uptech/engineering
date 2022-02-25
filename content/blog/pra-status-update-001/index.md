@@ -4,7 +4,9 @@ date = 2019-01-07T09:32:01-08:00
 updated = 2019-01-07T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 This is the first status update of the Pra macOS application. I figured what better time to do this than right after 2018 ends and 2019 begins. My goal with this is to give you an idea of where I am with the development, give you some insight into the things I am doing and some of the decisions I am making along the way. If you would like a more real-time feed of what is happening and want to provide feedback you can always follow me on Twitter [@drewdeponte](https://twitter.com/drewdeponte).

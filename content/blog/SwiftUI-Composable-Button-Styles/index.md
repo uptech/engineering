@@ -4,7 +4,9 @@ date = 2021-11-08T06:00:01-08:00
 updated = 2021-11-08T06:00:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 One frustrating/annoying things about SwiftUI Buttons for me has been the

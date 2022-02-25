@@ -4,7 +4,9 @@ date = 2019-07-18T09:32:01-08:00
 updated = 2019-07-18T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewedponte"]
 +++
 
 This release includes a mix of foundational features, small improvement features, as well as some bug fixes, performance improvements, etc.

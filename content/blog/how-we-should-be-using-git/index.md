@@ -4,7 +4,9 @@ date = 2021-01-26T01:32:01-08:00
 updated = 2021-01-26T01:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Git was created by Linus Torvalds out of a need. At the time the Linux Kernel team was using a proprietary Distributed Source Control Management (DSCM) system. However, due to licensing issues the Linux Kernel team could no longer use this proprietary DSCM system. Therefore, Linus decided to build Git as the DSCM system he always wished they had.

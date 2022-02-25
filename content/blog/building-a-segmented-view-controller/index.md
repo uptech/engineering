@@ -4,7 +4,9 @@ date = 2016-12-16T10:43:02-08:00
 updated = 2016-12-16T10:43:02-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Let's say you run into a scenario where you need to build a mobile interface that has tabs at the top of the screen. If you are working on Android this isn't too much of a problem as it is natively supported and part of their [Material Design](https://material.io/guidelines/components/tabs.html). If you are building an iOS app it is a bit of a different story as the native `UITabBarController` doesn't really work at the top of the screen. Yes, there are some nasty things you can do to hack it. But, we really shouldn't be hacking things, should we? If we want to not run into crazy issues later and continue the hack, we should generally use the framework and systems as they were designed to be used.

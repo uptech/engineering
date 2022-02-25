@@ -6,8 +6,7 @@ build_search_index = true
 # theme = "zola_docsascode_theme"
 # taxonomies = [
 #     {name = "tags", rss = true},
-#     {name = "authors", rss = true},
-# ]
+#     {name = "authors", rss = true}, ]
 
 theme = "adidoks"
 
@@ -53,6 +52,19 @@ language_code = "en-US"
 # Set date format in blog publish metadata
 timeformat = "%Y-%m-%d %H:%M:%S" # e.g. 2021-05-01 09:19:42
 timezone = "UTC"
+
+[extra.authors.drewdeponte]
+name = "Drew De Ponte"
+url = "https://drewdeponte.com"
+
+[extra.authors.ryanhedges]
+name = "Ryan Hedges"
+
+[extra.authors.philipjohnson]
+name = "Philip Johnson"
+
+[extra.authors.johnholton]
+name = "Jon Holtan"
 
 # Edit page on reposity or not
 # edit_page = false

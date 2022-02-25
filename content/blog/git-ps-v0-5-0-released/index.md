@@ -4,7 +4,9 @@ date = 2020-12-10T08:30:01-08:00
 updated = 2020-12-10T08:30:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 I just released [Git Patch Stack][] v0.5.0. To update simply run the following:

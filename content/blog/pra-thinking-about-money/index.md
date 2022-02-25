@@ -4,7 +4,9 @@ date = 2018-12-19T09:32:01-08:00
 updated = 2018-12-19T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 While I am waiting to collect information from the [survey](/blog/pull-request-notifications-an-anti-pattern/), I started thinking about how I could make money with Pra. I thought about it before at a high level. But now I have started thinking about it in more depth.

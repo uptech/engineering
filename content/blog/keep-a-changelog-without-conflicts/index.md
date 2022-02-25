@@ -4,7 +4,9 @@ date = 2020-05-11T08:30:01-08:00
 updated = 2020-05-11T08:30:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 For years, like many others, we have maintained `CHANGELOG.md` files inside our

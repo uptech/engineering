@@ -4,7 +4,9 @@ date = 2018-10-19T09:32:01-08:00
 updated = 2018-10-19T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Today, I was working on a client project. As usual a couple of  designers had done some high fidelity designs in [Sketch](https://www.sketchapp.com) that I was riffing off. In the designs on the Sign Up screen near the bottom there was the classic notice stating that by signing up you are agreeing to the **User Agreement** and **Privacy Policy**.

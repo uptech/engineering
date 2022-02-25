@@ -4,7 +4,9 @@ date = 2019-02-26T03:01:01-08:00
 updated = 2019-02-26T03:01:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Ryan Hedges"
+
+[extra]
+authors = ["ryanhedges"]
 +++
 
 I recently had the privilege of representing UpTech to the students at [LearningFuze](https://learningfuze.com/) by presenting my thoughts and experiences surrounding finding a job as a developer. We had such a great time talking with the students and received some great feedback on how the presentation helped them.

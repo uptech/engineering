@@ -4,7 +4,9 @@ date = 2021-01-20T01:32:01-08:00
 updated = 2021-01-20T01:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Woot woot! The first couple releases of the year are out 🎉. These releases include major features as well as important bug fixes.

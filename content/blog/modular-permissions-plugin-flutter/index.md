@@ -4,7 +4,9 @@ date = 2020-10-29T11:30:01-08:00
 updated = 2020-10-29T11:30:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Jon Holtan"
+
+[extra]
+authors = ["jonholtan"]
 +++
 
 On mobile (Android, iOS), developers have to ask the user to access certain runtime features. These permissions typically include the user's location, the user's contacts, or a plethora of others. Generally, when we think of cross-platform, we think of one size fits all plugins. This approach is anticipated in the Flutter plugin ecosystem. However, when it comes to permissions, this idea breaks down. 

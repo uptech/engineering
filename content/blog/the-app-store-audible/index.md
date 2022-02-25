@@ -4,7 +4,9 @@ date = 2019-02-22T09:32:01-08:00
 updated = 2019-02-22T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 It is Sunday, Feb 17th, 2019 at 10:58 pm and I have just submitted the **Minimal Free Version** of [Pra][] to the Apple App Store for review. I post in our team Slack channel that I've submitted and I cross my fingers as we wait for Apple to respond.

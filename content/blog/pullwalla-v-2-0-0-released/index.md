@@ -4,7 +4,9 @@ date = 2019-11-18T01:32:01-08:00
 updated = 2019-11-18T01:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Philip Johnson"
+
+[extra]
+authors = ["philipjohnson"]
 +++
 
 ## Pra is now Pullwalla!

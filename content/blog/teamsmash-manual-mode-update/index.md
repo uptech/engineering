@@ -4,7 +4,9 @@ date = 2020-04-20T08:30:01-08:00
 updated = 2020-04-20T08:30:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Ryan Hedges"
+
+[extra]
+authors = ["ryanhedges"]
 +++
 
 If you don't already know, UpTech has created a Mac App to help teams stay connected through photos. It's a very useful app and it has provided us a lot of fun and comradery as we use it every day.

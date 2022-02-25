@@ -4,7 +4,9 @@ date = 2017-01-07T11:49:12-08:00
 updated = 2017-01-07T11:49:12-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 This is another screencast I dug up while cleaning out some of the digital clutter in my life. This one still provides a great basic walk through of how to properly define acceptance tests and use them to drive out code with Cucumber.

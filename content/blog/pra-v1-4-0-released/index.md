@@ -4,7 +4,9 @@ date = 2019-08-21T09:32:01-08:00
 updated = 2019-08-21T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Version v1.4.0 of Pra just made it to the App Store. 

@@ -4,7 +4,9 @@ date = 2018-12-11T09:32:01-08:00
 updated = 2018-12-11T09:32:01-08:00
 draft = false
 template = "blog/page.html"
-author = "Drew De Ponte"
+
+[extra]
+authors = ["drewdeponte"]
 +++
 
 Back in 2013, I was lead of a software development team at ReachLocal, Inc. At the time we were using GitHub for open source projects and Atlassian Stash for our private Git repositories.
