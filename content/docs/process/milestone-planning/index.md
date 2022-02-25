@@ -1,5 +1,5 @@
 +++
-title = "Milestone Planning (TODO)"
+title = "Milestone Planning"
 description = "Overview of our Milestone Planning process"
 date = 2021-05-01T18:20:00+00:00
 updated = 2021-05-01T18:20:00+00:00
@@ -13,14 +13,40 @@ toc = true
 top = false
 +++
 
-* TechLead puts together Detailed Design Spec for a Milestone
-	* Scoped Systems Architecture Diagram
-	* Protocol Specifications (REST API endpoints, GraphQL mutations/queries, etc.)
-		* requirements more about interactions of systems/components and less about the exact representation of data across those channels.
-	* Application Architecture Diagram
-	* Infrastructure Diagram (depends on need)
-	* Sequence Diagram for interactions (depends on need)
-	* Flow Charts for crucial logic paths (depends on need)
-	* Example Detailed Design Spec Outline
-* TechLead schedules and runs Design Review of Milestone (uptech internal)
-* TechLead schedules and runs a kick-off meeting for the Milestone (uptech internal)
+The **Milestone Planning** process is basically the same process that we do in terms of **Project Planning**. The main difference is that we are planning within the scope of a defined **Milestone**. This process is again driven by the Tech Lead. It can be thought of in the following sections.
+
+## Scoped Systems Architecture Diagram
+
+When doing Milestone Planning you are scoping your thought process and in turn your created artifacts to a particular milestone. Therefore, you are creating a System Architecture Diagram that only focuses on the needs for this particular milestone. This is useful again to provide context but also useful to remove the noise of everything outside of the scope of this Milestone.
+
+## Scoped Protocol Specifications
+
+These protocol specifications again aren't inteded to be 100% accurate in terms of every piece of data. It is intended to be a tool to make the Tech Lead think through the core data that needs to be exchanged via this different channels and what those protocols would look like.
+
+## Application Architecture
+
+The Application Architecture is where you start to visually layout how your team is going to build an application that will meet the needs of the goals. This again is about components, how data flows through them, and what components handle different types of processing.
+
+## Infrastructure Diagram (depends on need)
+
+Infrastructucture Diagrams aren't always necessary. Basically if there is something complex and abnormal necessary in the infrastructure then we should create an infrastructure diagram. The other use case might be that a client is explicitly requesting or pushing for an Infrastructure Diagram.
+
+## Sequence Diagram (depends on need)
+
+A Sequence Diagram is again dependent. If you are in a situation where you need to clearly define and communicate about complex interactions between system level or software level components a Sequence Diagram is the tool for you.
+
+## Flow Chart (depends on need)
+
+Flow Charts again aren't required but are super useful when you have some complex logic that needs to be planned out and thought out.
+
+## Detailed Design Spec
+
+The Tech Lead then puts together a Detailed Design Spec similar to the concept and structure of the Project Design Spec from before except scoped down to the concerns of this one milestone.
+
+## Design Review
+
+Once completed the Tech Lead schedules a design review (same process as before) except this time it happens within the Squad. If the Squad feels they need external imput from people outside the Squad they are welcome to invite other people.
+
+## Kick-off Meeting
+
+Once the Design Review process is complete. The Tech Lead schedules a kick-off meeting for the Squad. This has the same purpose as before. It is to get everyone comfortable with everything and provide a venue for people to raise concerns, ask questions, etc.
