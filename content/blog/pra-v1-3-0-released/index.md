@@ -6,7 +6,7 @@ draft = false
 template = "blog/page.html"
 
 [extra]
-authors = ["drewedponte"]
+authors = ["drewdeponte"]
 +++
 
 This release includes a mix of foundational features, small improvement features, as well as some bug fixes, performance improvements, etc.
