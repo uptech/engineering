@@ -1,6 +1,6 @@
 base_url = "https://engineering.uptechstudio.com"
 compile_sass = true
-title = "UpTech Works, LLC - Engineering"
+title = "Uptech Studio - Engineering"
 build_search_index = true
 
 # theme = "zola_docsascode_theme"
@@ -28,7 +28,7 @@ highlight_code = true
 highlight_theme = "kronuz"
 
 [extra]
-title = "Engineering Playbook"
+title = "Engineering"
 
 # Set HTML file language
 language_code = "en-US"
