@@ -1,6 +1,5 @@
 +++
 title = "Pra v1.4.0"
-description = "Announcement about Pra v1.4.0 being released and what was included and why."
 date = 2019-08-21T09:32:01-08:00
 updated = 2019-08-21T09:32:01-08:00
 draft = false

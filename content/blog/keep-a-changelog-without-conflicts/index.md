@@ -1,6 +1,5 @@
 +++
 title = "Keep a Changelog without Conflicts"
-description = "An introduction to our tooling & process for keeping a changelog without the pain."
 date = 2020-05-11T08:30:01-08:00
 updated = 2020-05-11T08:30:01-08:00
 draft = false

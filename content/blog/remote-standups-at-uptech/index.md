@@ -1,6 +1,5 @@
 +++
 title = "Remote Stand-ups at UpTech"
-description = "Daily stand-up meetings are great, but hard when some (or all) of your team works remotely. At UpTech we rely on Slack to hold virtual standups."
 date = 2017-07-10T11:53:01-08:00
 updated = 2017-07-10T11:53:01-08:00
 draft = false

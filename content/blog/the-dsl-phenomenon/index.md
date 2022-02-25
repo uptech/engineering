@@ -1,6 +1,5 @@
 +++
 title = "The DSL Phenomenon"
-description = "An exploration of the DSL Phenomenon and how we might get there."
 date = 2021-02-22T01:32:01-08:00
 updated = 2021-02-22T01:32:01-08:00
 draft = true

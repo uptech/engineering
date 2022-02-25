@@ -1,6 +1,5 @@
 +++
 title = "Pullwalla - Big Sur & The Future"
-description = "Announcement about numerous Pullwalla releases to support Big Sur and where we are taking things in the future."
 date = 2020-11-18T01:32:01-08:00
 updated = 2020-11-18T01:32:01-08:00
 draft = false

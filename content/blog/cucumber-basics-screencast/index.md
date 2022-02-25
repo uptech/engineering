@@ -1,6 +1,5 @@
 +++
 title = "Cucumber Basics Screencast"
-description = "A walkthrough of how to properly define acceptance tests using Cucumber."
 date = 2017-01-07T11:49:12-08:00
 updated = 2017-01-07T11:49:12-08:00
 draft = false

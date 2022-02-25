@@ -1,6 +1,5 @@
 +++
 title = "Sizing and Optimizing Images for iOS"
-description = "Real world example of how we decide how to size and optimize images for use in an iOS application."
 date = 2018-11-09T09:32:01-08:00
 updated = 2018-11-09T09:32:01-08:00
 draft = false

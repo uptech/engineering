@@ -1,6 +1,5 @@
 +++
 title = "How to Get a Job as a Developer"
-description = "Strategies For Staying Sane During Your Job Search!"
 date = 2019-02-26T03:01:01-08:00
 updated = 2019-02-26T03:01:01-08:00
 draft = false

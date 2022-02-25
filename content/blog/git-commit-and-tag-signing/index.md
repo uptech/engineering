@@ -1,6 +1,5 @@
 +++
 title = "Git Commit and Tag Signing"
-description = "Git Commits and Tags are great on their own, except they don't really guarantee identity unless you sign them."
 date = 2017-08-04T09:32:01-08:00
 updated = 2017-08-04T09:32:01-08:00
 draft = false

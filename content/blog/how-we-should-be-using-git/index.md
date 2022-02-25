@@ -1,6 +1,5 @@
 +++
 title = "How we should be using Git"
-description = "An exploration of how the Git creators use Git and how we should be using it."
 date = 2021-01-26T01:32:01-08:00
 updated = 2021-01-26T01:32:01-08:00
 draft = false

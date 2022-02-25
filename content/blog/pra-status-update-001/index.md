@@ -1,6 +1,5 @@
 +++
 title = "Pra: Status Update 001"
-description = "A look at where I currently am with Pra"
 date = 2019-01-07T09:32:01-08:00
 updated = 2019-01-07T09:32:01-08:00
 draft = false

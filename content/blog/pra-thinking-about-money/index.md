@@ -1,6 +1,5 @@
 +++
 title = "Pra: Thinking about Money"
-description = "Dive into Exploration I took pondering about the different ways I could have Pra make money."
 date = 2018-12-19T09:32:01-08:00
 updated = 2018-12-19T09:32:01-08:00
 draft = false

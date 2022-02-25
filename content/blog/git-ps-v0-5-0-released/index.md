@@ -1,6 +1,5 @@
 +++
 title = "Git Patch Stack v0.5.0"
-description = "Announcing the official release of Git Patch Stack v0.5.0. This includes a deep dive on whats new and what has changed in this release."
 date = 2020-12-10T08:30:01-08:00
 updated = 2020-12-10T08:30:01-08:00
 draft = false

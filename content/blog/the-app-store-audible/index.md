@@ -1,6 +1,5 @@
 +++
 title = "Pra - The App Store Audible"
-description = "A look at our failed App Store launch and where it took us"
 date = 2019-02-22T09:32:01-08:00
 updated = 2019-02-22T09:32:01-08:00
 draft = false

@@ -1,6 +1,5 @@
 +++
 title = "Pullwalla is now in the App Store"
-description = "Announcement about Pullwalla 2.0 being released and details about the refresh."
 date = 2019-11-18T01:32:01-08:00
 updated = 2019-11-18T01:32:01-08:00
 draft = false

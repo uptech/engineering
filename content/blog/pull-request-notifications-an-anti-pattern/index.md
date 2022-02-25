@@ -1,6 +1,5 @@
 +++
 title = "Pull Request Notifications: an Anti-Pattern"
-description = "Exploration of problems around pull requests, a proof of concept of a possible direction, and discovery of demand and interest in solutions in this space."
 date = 2018-12-11T09:32:01-08:00
 updated = 2018-12-11T09:32:01-08:00
 draft = false

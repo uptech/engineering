@@ -1,6 +1,5 @@
 +++
 title = "Navigation Bar Behind Status Bar"
-description = "How to extend the UINavigationBar behind the status bar in your iOS app"
 date = 2018-12-20T00:00:00+00:00
 updated = 2018-12-20T00:00:00+00:00
 draft = false

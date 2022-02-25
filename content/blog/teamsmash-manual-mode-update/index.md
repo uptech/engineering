@@ -1,6 +1,5 @@
 +++
 title = "TeamSmash - Manual Capture mode in latest update"
-description = "Take snapshots manually so that you're in control!"
 date = 2020-04-20T08:30:01-08:00
 updated = 2020-04-20T08:30:01-08:00
 draft = false

@@ -1,6 +1,5 @@
 +++
 title = "RSpec Basics Screencast"
-description = "A basic walkthrough of outside in development with RSpec."
 date = 2017-02-04T09:02:38-08:00
 updated = 2017-02-04T09:02:38-08:00
 draft = false

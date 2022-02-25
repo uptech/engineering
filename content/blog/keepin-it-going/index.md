@@ -1,6 +1,5 @@
 +++
 title = "Pullwalla - Keepin' it Going"
-description = "Announcement about numerous Pullwalla releases and significant changes made in them."
 date = 2020-03-18T01:32:01-08:00
 updated = 2020-03-18T01:32:01-08:00
 draft = false

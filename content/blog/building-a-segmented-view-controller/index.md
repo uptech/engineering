@@ -1,6 +1,5 @@
 +++
 title = "Building a SegmentedViewController"
-description = "Walkthrough of buliding a SegementedViewController."
 date = 2016-12-16T10:43:02-08:00
 updated = 2016-12-16T10:43:02-08:00
 draft = false

@@ -1,6 +1,5 @@
 +++
 title = "Pullwalla - A New Era"
-description = "Announcement about Pullwalla iOS new Pull Request Diffs view and have we are now  in the state of being a full blown pull request management tool."
 date = 2021-01-20T01:32:01-08:00
 updated = 2021-01-20T01:32:01-08:00
 draft = false

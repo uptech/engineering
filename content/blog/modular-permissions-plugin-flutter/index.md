@@ -1,6 +1,5 @@
 +++
 title = "Modularizing Native Permissions for Flutter."
-description = "Explicitly handling permission requests for Flutter applications."
 date = 2020-10-29T11:30:01-08:00
 updated = 2020-10-29T11:30:01-08:00
 draft = false

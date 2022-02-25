@@ -1,6 +1,5 @@
 +++
 title = "Inline Links in Text in iOS Apps"
-description = "Adding links inline with text in your iOS app"
 date = 2018-10-19T09:32:01-08:00
 updated = 2018-10-19T09:32:01-08:00
 draft = false

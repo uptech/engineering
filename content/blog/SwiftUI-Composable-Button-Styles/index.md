@@ -1,6 +1,5 @@
 +++
 title = "SwiftUI: Composable Button Styles"
-description = "Overcoming some of the limitations of SwiftUI Buttons using functional programming principles."
 date = 2021-11-08T06:00:01-08:00
 updated = 2021-11-08T06:00:01-08:00
 draft = false

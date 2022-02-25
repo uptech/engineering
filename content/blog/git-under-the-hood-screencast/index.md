@@ -1,6 +1,5 @@
 +++
 title = "Git Under the Hood Screencast"
-description = "A discussion & review of the first layer of Git under the hood."
 date = 2016-12-18T00:59:02-08:00
 updated = 2016-12-18T00:59:02-08:00
 draft = false
