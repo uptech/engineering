@@ -29,7 +29,7 @@ The Git commit is probably the most fundamental unit we have to manage the growt
 
 ## Git Patch Stack
 
-To help us follow these best practices we have developed a workflow on top of Git called [Git Patch Stack][] and built a small command Git extension to help streamline it. You can get a deeper understanding of this workflow and how to use it via our blog post, [How we should be using Git](https://upte.ch/blog/how-we-should-be-using-git/).
+To help us follow these best practices we have developed a workflow on top of Git called [Git Patch Stack][] and built a small command Git extension to help streamline it. You can get a deeper understanding of this workflow and how to use it via our blog post, [How we should be using Git](https://uptechstudio.com/blog/how-we-should-be-using-git/).
 
 ## A Communication Tool
 

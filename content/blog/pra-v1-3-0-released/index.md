@@ -39,5 +39,5 @@ In addition to the above changes we also did the following.
 
 The most significant of these changes was switch to GitHub v4 GraphQL API as it facilitates getting the right data out of GitHub in a more efficient fashion. It also puts us on their latest API so that we don't have to be worried about the API being deprecated out from under us.
 
-Overall we think this release was an excellent step in the right direction and hope you enjoy the new features. As always we love hearing from you. So, don't hesitate ping us on [Twitter](https://twitter.com/uptechworks) or [email](mailto:pra@upte.ch).
+Overall we think this release was an excellent step in the right direction and hope you enjoy the new features. As always we love hearing from you. So, don't hesitate ping us on [Twitter](https://twitter.com/uptechstudio) or [email](mailto:pra@uptechstudio.com).
 

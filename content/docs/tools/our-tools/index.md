@@ -55,6 +55,6 @@ Given that UpTech is remote company. We decided it was important to still feel c
 
 [Pullwalla]: https://pullwalla.com
 [Git Patch Stack]: https://github.com/uptech/git-ps 
-[How we should be using Git]: https://upte.ch/blog/how-we-should-be-using-git/
+[How we should be using Git]: https://uptechstudio.com/blog/how-we-should-be-using-git/
 [Git Patch Stack Guide]: https://github.com/uptech/git-ps/wiki/Guide
 [Git Changelog]: https://github.com/uptech/git-cl 

@@ -113,7 +113,7 @@ weight = 20
 
 # Footer contents
 [extra.footer]
-info = 'Copyright © 2016-2022 <a href="https://upte.ch">UpTech Works, LLC</a>. All rights reserved. </br> Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a>'
+info = 'Copyright © 2016-2022 <a href="https://uptechstudio.com">UpTech Works, LLC</a>. All rights reserved. </br> Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a>'
 
 # [[extra.footer.nav]]
 # name = "Privacy"

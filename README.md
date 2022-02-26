@@ -8,7 +8,7 @@ This is very much a living and breathing thing that is welcome to change over ti
 
 ## Hosted
 
-The Engineering Playbook is hosted via Netlify at [https://engineering-playbook.upte.ch](https://engineering-playbook.upte.ch).
+The Engineering Playbook is hosted via Netlify at [https://engineering.uptechstudio.com](https://engineering.uptechstudio.com).
 
 ## Contribution Process
 

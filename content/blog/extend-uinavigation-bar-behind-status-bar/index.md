@@ -86,7 +86,7 @@ sample project from our [sample projects repo on
 GitHub](https://github.com/uptech/sample_projects/tree/master/ios/uinavigationbar-under-statusbar).
 
 If you have any comments or questions about this post or the sample project
-please feel free to [email us](mailto:info@upte.ch) or submit a [new github
+please feel free to [email us](mailto:info@uptechstudio.com) or submit a [new github
 issue](https://github.com/uptech/sample_projects/issues/new). We'd love to hear
 from you!
 

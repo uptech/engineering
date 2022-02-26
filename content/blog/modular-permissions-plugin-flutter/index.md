@@ -65,4 +65,4 @@ await ModularPermissions.openAppSettings(LocationWhenInUsePermissionRequest());
 
 ## Conclusion
 
-We at UpTech are always striving to improve the development ecosystem for ourselves and current or future developers, which is why we are actively creating new plugins for Flutter and other platforms. We hope that Modular Permissions gives developers confidence that they can develop polished experiences for their users. Do you enjoy working on solutions to empower others? [Reach out](https://upte.ch/#contact) today to start a conversation. We’d love to hear from you.
+We at UpTech are always striving to improve the development ecosystem for ourselves and current or future developers, which is why we are actively creating new plugins for Flutter and other platforms. We hope that Modular Permissions gives developers confidence that they can develop polished experiences for their users. Do you enjoy working on solutions to empower others? [Reach out](https://uptechstudio.com/#contact) today to start a conversation. We’d love to hear from you.

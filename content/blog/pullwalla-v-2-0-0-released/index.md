@@ -44,5 +44,5 @@ A new name deserves a fresh [website](https://pullwalla.com/?utm_source=uptech&u
 
 We’re excited about all the changes we have in store! We hope you find Pullwalla as useful and pleasurable as we do.
 
-Please [drop us a line](mailto: pullwalla@upte.ch) if you have any questions, comments, or suggestions.
+Please [drop us a line](mailto: pullwalla@uptechstudio.com) if you have any questions, comments, or suggestions.
 

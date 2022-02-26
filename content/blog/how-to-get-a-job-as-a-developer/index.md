@@ -57,5 +57,5 @@ And that's it! Please take a look at the presentation below. We hope that it hel
 
 ------------
 
-If you have any comments about this post or questions about us at UpTech feel free to [email us](mailto:info@upte.ch). We'd love to hear from you!
+If you have any comments about this post or questions about us at UpTech feel free to [email us](mailto:info@uptechstudio.com). We'd love to hear from you!
 
