@@ -10,7 +10,11 @@ authors = ["drewdeponte"]
 thumbnail = "/img/posts/thumbnails/logo-git.png"
 +++
 
-We all know that big pull requests, in the range of hundreds or thousands of lines of change, have a decent number of real problems.
+We were struggling to deal with our pull requests. We weren't getting quality peer reviews of them, we were having a hard time reverting their commits when necessary, and even just having a hard time understanding the Git history because of them.
+
+So we decided to put some thought into this and see what we could come up with.
+
+The first thing was just understanding all the of the issues we were running into and coming to the conclusion that they are all a side effect of **big** pull requests. What we are calling **big** pull requsets are pull requests that have a changeset nearing a hundred lines of change or more. **Big** pull requests
 
 * effectively **eliminate the value of peer review** as the changesets are just too overwhelming for people to focus on.
 * silo changes from the team **delaying feedback**
@@ -20,7 +24,14 @@ We all know that big pull requests, in the range of hundreds or thousands of lin
 * make it **hard to revert changes**
 * result in a **complicated git history** making it hard to look back and understand how best to interact with or even understand changes
 
-## Why are we creating big pull requests?
+## Why are they so big?
 
-If we know **big** pull requests result in all these issues and we think there must be a better alternative, maybe smaller pull requests. We need to figure out why we are creating such big pull requests in the first place.
+After understanding the that issues were coming from **big** pull requests. We decided we should try and understand why our pull requests were so big and see if there was a good reason for them being big.
 
+In our case 
+
+
+## How to make smaller pull requests
+
+
+We should probably figure out how to make smaller pull requests. 
