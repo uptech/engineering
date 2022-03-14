@@ -1,6 +1,6 @@
 +++
 title = "Versioning"
-description = "todo"
+description = "Our Library & API Versioning Standards"
 date = 2021-05-01T18:20:00+00:00
 updated = 2021-05-01T18:20:00+00:00
 draft = false
