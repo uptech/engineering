@@ -80,6 +80,8 @@ After using this workflow and seeing and feeling the value that **small pull req
 
 So we created [Git Patch Stack][] and it has only further solidified the workflow, the mentality around it, and the vast benefits that fall out of **small pull requests** and this workflow in general.
 
+For a deeper dive on [Git Patch Stack][], this workflow and concepts to help identify these smaller logical chunks of work, see our post on [How we should be using Git](/blog/how-we-should-be-using-git/).
+
 [GitHub Flow]: https://docs.github.com/en/get-started/quickstart/github-flow
 [GitHub]: https://github.com
 [Bitbucket]: https://bitbucket.org
