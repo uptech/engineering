@@ -1,5 +1,5 @@
 +++
-title = "Journey to small pull requests"
+title = "Journey to Small Pull Requests"
 date = 2022-03-15T09:32:01-08:00
 updated = 2022-03-15T09:32:01-08:00
 draft = false
