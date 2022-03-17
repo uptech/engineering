@@ -14,7 +14,7 @@ We were struggling to deal with our pull requests. We weren't getting quality pe
 
 So we decided to dig into this and see if we could get to the core of it and possibly come up with a solution.
 
-The first thing was just understanding all the of the issues we were running into and coming to the conclusion that they are all a side effect of **big** pull requests. What we are calling **big** pull requsets are pull requests that have a changeset nearing a hundred lines of change or more. Number of changes in a pull request isn't a perfect metric. But it is a good enough metric to make you think about a pull request and determine if it is too large or not. **Big** pull requests
+The first thing was just understanding all the of the issues we were running into and coming to the conclusion that they are all a side effect of **big** pull requests. What we are calling **big** pull requests are pull requests that have a changeset nearing a hundred lines of change or more. Number of changes in a pull request isn't a perfect metric. But it is a good enough metric to make you think about a pull request and determine if it is too large or not. **Big** pull requests
 
 * effectively **eliminate the value of peer review** as the changesets are just too overwhelming for people to focus on.
 * silo changes from the team **delaying feedback**
@@ -32,7 +32,7 @@ We were following the [GitHub Flow][] and using feature branches, which in turn 
 
 ## Alternatives
 
-So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continous Delivery Methodoly and Trunk Based Development as the others all seem to use feature branches.
+So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continous Delivery Methodology and Trunk Based Development, as the others all seem to use feature branches.
 
 Both the Continous Integration Methodology and Trunk Based Development are focused around getting small, logical, buildable, testable, not-necessarily complete changes into mainline as quickly as possible. They both see this as a core principle to support other developers on the team being aware of the work being done and enabling contribution and planning around it.
 
@@ -112,11 +112,11 @@ At this point you open a pull request for B. Then you start working on refining 
 
 At this point you have a patch that technically implements the feature from a user perspective & adds the associated e2e tests. This is still a small, logical, buildable, testable, patch that you open a pull request for. The peer reviewer understand that this patch adds the feature and therefore when they review this pull request they do the full feature review as well as code review. Generally these inner patches are paired with unit tests while the outer most feature patch is paired with e2e tests.
 
-There are many ways this can very. For example with someone not doing outside-in development or maybe you have multiple internal dependency patches that aren’t intertwined. I think the important thing is just that the pull requests are opened from the inside-out.
+There are many ways this can vary. For example with someone not doing outside-in development or maybe you have multiple internal dependency patches that aren’t intertwined. I think the important thing is just that the pull requests are opened from the inside-out.
 
-Also one of the beautiful things about this workflow is that it decouples you from caring about how quickly your pull requests get reviewed because you are able to still continue development of your feature irrespective of how long it takes someone to review your pull requests. This is happens thanks to the fact that the patch stack continues to hold the patches even after requesting review.
+Also one of the beautiful things about this workflow is that it decouples you from caring about how quickly your pull requests get reviewed because you are able to still continue development of your feature irrespective of how long it takes someone to review your pull requests. This happens thanks to the fact that the patch stack continues to hold the patches even after requesting review.
 
-Further details on this process of outside-in and inside-out in relation to this workflow are covered in our article [How we should we using Git](/blog/how-we-should-be-using-git/).
+Further details on this process of outside-in and inside-out in relation to this workflow are covered in our article [How we should be using Git](/blog/how-we-should-be-using-git/).
 
 ## Ticketing Alignment
 
