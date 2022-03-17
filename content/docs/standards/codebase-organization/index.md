@@ -15,7 +15,7 @@ top = false
 
 ## TLDR
 
-The following is the TLDR of what we do in terms of Codebase Organization here at UpTech Works.
+The following is the TLDR of what we do in terms of Codebase Organization here at [Uptech Studio][].
 
 * organize code according to architectue **not** types of architecture element types
 * if in framework that does organize by architecture elment types
@@ -62,3 +62,5 @@ We know from experience fighting against a frameworks inherent design is general
 Simple, we follow the convention of the framework up until we reach that natural boundary where it stops providing direction, e.g. the `lib` folder. Everything inside that `lib` folder we would organize around application architecture and **not** by category of architecture component.
 
 This at least gives developers the knowledge around that area of the code. Ideally it would be great if we could get those benefits at the framework level of things as well. However, it just isn't worth fighting against the framework to make it happen.
+
+[Uptech Studio]: https://uptechstudio.com
