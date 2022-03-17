@@ -25,7 +25,7 @@ We **require** that Pull Requests have the following characteristics.
 
 It is crucial that pull requests are **small**. The quality of peer review exponentially decreases as the size of the pull request increases. If you are going to have PRs in the hundreds or thousands of lines of change range you may as well just not do peer review. Here at [Uptech Studio][] we believe in producing the highest quality code that we can and therefore we **must** have **small** pull requests.
 
-If you are interested in how we got to small pull requests checkout our post, [Journey to Small Pull Requests](/blog/journey-to-small-pull-requests).
+If you are interested in how we got to small pull requests, checkout our post [Journey to Small Pull Requests](/blog/journey-to-small-pull-requests).
 
 ### Logical
 
