@@ -15,7 +15,7 @@ top = false
 
 ### The Problem
 
-UpTech Works, LLC has remote employees all over the US. Therefore our team is often pretty fragmented in terms of physical location. For example, I might be on-site at a client's office while another member is at a different client's office, and yet other members are at our office. This physical fragmentation makes it difficult to stay on top of what is going on across the organization on a day-to-day basis.
+[Uptech Studio][] has remote employees all over the US. Therefore our team is often pretty fragmented in terms of physical location. For example, I might be on-site at a client's office while another member is at a different client's office, and yet other members are at our office. This physical fragmentation makes it difficult to stay on top of what is going on across the organization on a day-to-day basis.
 
 ### Normal Solution
 
@@ -65,13 +65,13 @@ Without this virtual standup every morning we wouldn't be able to successfully r
 
 ## Client Standups
 
-Not only do we post our complete standup in the `#standups` channel to share with UpTech Works, LLC. We also post client scoped versions of our standups in shared channels between UpTech Works and the respective client, .e.g. `#client1-uptech`. This helps in a number of ways.
+Not only do we post our complete standup in the `#standups` channel to share with [Uptech Studio][]. We also post client scoped versions of our standups in shared channels between [Uptech Studio][] and the respective client, .e.g. `#client1-uptech`. This helps in a number of ways.
 
 * it helps keeps the client updated and clued into what things are progressing
 * it gives an opportunity to highlight and remind the client about blockers that they might be able to facilitate
-* it helps stay in alignment with client team and any coordination efforts between UpTech Works and them
+* it helps stay in alignment with client team and any coordination efforts between [Uptech Studio][] and them
 
-The following is what the above UpTech Works, LLC standup would look like scoped down to `client1` and would be what we would shared in the `#client1-uptech`.
+The following is what the above [UpTech Studio][] standup would look like scoped down to `client1` and would be what we would shared in the `#client1-uptech` channel.
 
 ```
 _Tue July 11, 2017 - Standup_
@@ -97,11 +97,11 @@ The following are a few tools we have created/found that help with this process.
 
 ### Gumleaf
 
-[Gumleaf][] is a side project of Drew De Ponte & Anthony Castelli where the beta release is being shared with UpTech Works, LLC to get feedback. It is a personal task management solution built around the concept of daily standups and also provides features to trivially scope standups down to specific clients as well as export standups in the Slack format.
+[Gumleaf][] is a side project of [Drew De Ponte][] & [Anthony Castelli][] where the beta release is being shared with [Uptech Studio][] to get feedback. It is a personal task management solution built around the concept of daily standups and also provides features to trivially scope standups down to specific clients as well as export standups in the Slack format.
 
 ![](gumleaf-screenshot.png)
 
-This has become a daily driver for most of UpTech Works. For further details checkout [3rd Party Tools - Gumleaf][Gumleaf].
+This has become a daily driver for most of [Uptech Studio][]. For further details checkout [3rd Party Tools - Gumleaf][Gumleaf].
 
 ### Vim/Neovim
 
@@ -117,5 +117,9 @@ This allows you to have a `standups.slack` file to facilitate keeping historical
 [Slack message format]: https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages
 [Vim]: http://www.vim.org
 [Vim Slack Format]: http://github.com/uptech/vim-slack-format
-[Gumleaf]: /docs/3rd-party-tools/#gumleaf
+[Gumleaf]: /docs/tools/3rd-party-tools/#gumleaf
 [Neovim]: https://neovim.io
+[Uptech Studio]: https://uptechstudio.com
+[Drew De Ponte]: https://drewdeponte.com
+[Anthony Castelli]: http://anthonycastelli.me
+[Git]: https://git-scm.com
