@@ -14,7 +14,9 @@ We were struggling to deal with our pull requests. We weren't getting quality pe
 
 So we decided to dig into this and see if we could get to the core of it and possibly come up with a solution.
 
-The first thing was just understanding all the of the issues we were running into and coming to the conclusion that they are all a side effect of **big** pull requests. What we are calling **big** pull requests are pull requests that have a changeset nearing a hundred lines of change or more. Number of changes in a pull request isn't a perfect metric. But it is a good enough metric to make you think about a pull request and determine if it is too large or not. **Big** pull requests
+The first thing was just understanding all the of the issues we were running into and coming to the conclusion that they are all a side effect of **big** pull requests.
+
+**Big** pull requests
 
 * effectively **eliminate the value of peer review** as the changesets are just too overwhelming for people to focus on.
 * silo changes from the team **delaying feedback**
