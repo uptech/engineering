@@ -52,6 +52,37 @@ A predictable state management library for Dart
 	* Video 3 - Setting up Schemes in Xcode for iOS ([link](https://www.youtube.com/watch?v=gdqnxcV7_FY))
 		* When setting up Schemes in Xcode, make sure the **Shared** box is checked on each new scheme and that the generated scheme files (ex: dev.xcscheme) are included in the commit to the repo so the next dev can build the project with the correct settings. 
 
+
+## VS Code Extensions
+
+### [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-codes)
+
+* Dart language support and debugger for Visual Studio Code.
+
+### [Flutter](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutters)
+
+* Flutter support and debugger for Visual Studio Code.
+
+### [Json to Dart Model](https://marketplace.visualstudio.com/items?itemName=hirantha.json-to-darts)
+
+* Extension convert Json to Dart Model class
+
+### [Awesome Flutter Snippets](https://marketplace.visualstudio.comitems?itemName=Nash.awesome-flutter-snippetss)
+
+* Awesome Flutter Snippets is a collection snippets and shortcuts for commonly used
+
+### [Flutter Intl](https://marketplace.visualstudio.com/items?itemName=localizely.flutter-intls)
+
+* Flutter localization binding from .arb files with official Intl library
+
+### [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlenss)
+
+* Improve highlighting of errors, warnings and other language diagnostics.
+
+### [Flutter Riverpod Snippets](https://marketplace.visualstudio.comitems?itemName=robert-brunhage.flutter-riverpod-snippetss)
+
+* Quick and easy Flutter Riverpod snippets
+
 ## Theme Extensions
 
 TBD
