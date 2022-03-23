@@ -19,13 +19,11 @@ A predictable state management library for Dart
 
 * [Bloc State Management Library](https://bloclibrary.dev/)
 * [Bloc vs Cubit](https://ppantaleon.medium.com/flutter-bloc-vs-cubit-100a0fb0efcf)
+* [Riverpod](https://riverpod.dev)
 
 ## Navigation
 
-* "Official Flutter Navigation 1.0 + 2.0" ([link](https://flutter.dev/docs/development/ui/navigation))
-* "Nav 2.0 + Deep Links" - Kevin D Moore via Ray Wenderlich ([link](https://www.raywenderlich.com/19457817-flutter-navigator-2-0-and-deep-links))
-* "Simple Guide to Nav 2.0" - Lee Phillips ([link](https://medium.com/geekculture/a-simpler-guide-to-flutter-navigator-2-0-part-i-70623cedc93b))
-* "Building a Simple Stack Navigator with Flutter Navigation 2.0" - John Cassidy ([link](https://johnwcassidy.medium.com/building-a-simple-stack-navigator-with-flutter-navigation-2-0-f11b55b71520))
+* "Go Router" - [link](https://gorouter.dev)
 
 ## DI
 
