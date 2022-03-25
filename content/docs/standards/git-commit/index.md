@@ -53,6 +53,8 @@ To help us follow these best practices we have developed a workflow on top of Gi
 
 Just as import if not *more important* than the source code change is the commit message itself. This is the only mechanism a commit author has to communicate very important things like, **what**, **intentension**, **reason (a.k.a. why)**, **approach (a.k.a. how)**, all crafted with **context**. Having this crucial information bound to the source code change is amazingly powerful and valuable when developing and maintaining an application over time.
 
+We have found it is also a useful communication tool for some automation tasks. Specifically for including Changelog entry information so that we don't create unnecessary conflicts in the commit itself. [Git Changelog][] can then use this information to generate our Changelog files for us.
+
 ### Official Git Commit Message Format
 
 Git as a tool has guidelines for commit messages to work best with git and it's various tools. This format is as follows:
@@ -68,19 +70,22 @@ One ore more paragraphs of text hard wrapped at 72 characters in length.
 We have built on the Official Git Commit Message Format to make sure we include this extremely important information. The following outlines our format.
 
 ```
-Short summary of change (the what) - must be 50 characters or less in length
+Short summary of change (the what) - 50 characters or less in
+length
 
-One or more paragraphs explaining the INTENSION of the change with valuable
-context. (Hard wrapped at 72 characters)
+One or more paragraphs explaining the INTENSION of the change with
+valuable context. (Hard wrapped at 72 characters)
 
-One or more paragraphs explaining the REASON for the change with valuable
-context. (Hard wrapped at 72 characters)
+One or more paragraphs explaining the REASON for the change with
+valuable context. (Hard wrapped at 72 characters)
 
-One or more paragraphs explaining the APPROACH taken to attempt to achieve the
-INTENSION or a portion of the INTENSION. (Hard wrapped at 72 characters)
+One or more paragraphs explaining the APPROACH taken to attempt to achieve
+the INTENSION or a portion of the INTENSION.
+(Hard wrapped at 72 characters)
 
-A reference to the associated ticket identifer so that people can
-quickly look it up and gain even more context.
+Associated Ticket Identifers
+
+Git Changelog header and entries if applicable
 ```
 
 ### Examples
@@ -130,15 +135,25 @@ If you are having difficulties remembering the git commit message format and wha
 
 1. Create your template file in a safe place with the following content. Common practice is to put it in `~/.gitmessage`.
 	```
-	Short summary of change (the what) - must be 50 characters or less in length
+	# Short summary of change (the what) ( <= 50 chars )
 
-	INTENSION paragraph(s) with context (Hard wrapped at 72 characters)
+	# INTENSION of the change with context (Hard wrapped at 72 chars) 
 
-	REASON for the change with context (Hard wrapped at 72 characters)
+	# REASON for the change with context (Hard wrapped at 72 chars)
 
-	APPROACH taken to attempt to achieve the INTENSION (Hard wrapped at 72 characters)
+	# APPROACH taken to attempt to achieve the INTENSION or a portion
+	# of the INTENSION. (Hard wrapped at 72 characters)
 
-	associated ticket identifers
+	# Associated Ticket Identifers
+
+	# Git Changelog header and entries if applicable
+	# [changelog]
+	# added: some addition you made that you want in your changelog
+	# changed: some change you made that you want in your changelog
+	# deprecated: some deprecation notice you want in your changelog
+	# removed: some removal you want in your changelog
+	# fixed: some fix you want in your changelog
+	# security: some security fix you want in your changelog
 	```
 2. Configure Git to use your new commit message template
 	```
@@ -149,3 +164,4 @@ If you are having difficulties remembering the git commit message format and wha
 [Git Patch Stack]: https://github.com/uptech/git-ps
 [How we should be using Git]: /blog/how-we-should-be-using-git/
 [Journey to Small Pull Requests]: /blog/journey-to-small-pull-requests/
+[Git Changelog]: /blog/keep-a-changelog-without-conflicts/
