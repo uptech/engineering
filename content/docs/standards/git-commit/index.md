@@ -138,8 +138,7 @@ If you are having difficulties remembering the git commit message format and wha
 
 	APPROACH taken to attempt to achieve the INTENSION (Hard wrapped at 72 characters)
 
-	A reference to the associated ticket identifer so that people can
-	quickly look it up and gain even more context.
+	associated ticket identifers
 	```
 2. Configure Git to use your new commit message template
 	```text
