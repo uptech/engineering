@@ -13,11 +13,21 @@ toc = true
 top = false
 +++
 
-The Git commit is probably the most fundamental unit we have to manage the growth and evolution of our source code. Git commits can be extremely useful sometimes and other times they can be useless. The following are the guidelines we have honed in to over the years to help make sure that our commits end up being the valuable kind.
+The Git commit is probably the most fundamental unit we have to manage the growth and evolution of our source code. Git commits can be extremely useful sometimes and other times they can be useless. The following are the guidelines we have honed in on over the years to help make sure that our commits end up being the valuable kind.
 
-## A Logical, Buildable, Testable Unit
+## Commit Characteristics
 
-**Each commit should be a logical unit.** This means it should include only changes related to that logical unit. This includes related code changes, automated test changes, tooling changes, etc. This is **crucial** to suppoort the ability to easily revert changes when necessary. It also is crucial for aiding in doing any sort of git commit tree spelunking.
+To aid with making sure our commits are the valuable kind and ensure they play nicely in the [Git Patch Stack][] and Continuous Integration methodologies we use the following characteristics as a checklist.
+
+* logical
+* buildable
+* testable
+* not-necessarily complete
+* releasable
+
+### Logical
+
+**Each commit should be a logical unit.** This means it should include only changes related to that logical unit. This includes related code changes, automated test changes, tooling changes, etc. This is **crucial** to suppoort the ability to easily revert changes when necessary. It is also crucial for aiding in doing any sort of git commit tree spelunking.
 
 ### Buildable
 
@@ -27,9 +37,17 @@ The Git commit is probably the most fundamental unit we have to manage the growt
 
 **Each commit should be testable.** This means that each commit must NOT break the automated testing tools or the tests. Similar to buildable this is important to make sure that all the Git tooling (e.g. git bisect) continue to work. It also helps with hot fixing, etc.
 
+### Not-Ncessarily Complete
+
+**Each commit does NOT have to be complete.** This means that you could for example have a commit that introduces a new method to an existing class. That is a complete logical change that is buildable and testable. But it isn't complete in terms of its interactions with other application architecture concepts. This is really just a reminder that we should **NOT** be including tagentially related changes into our logical commits.
+
+### Releasable
+
+**Each commit should be releasable.** This means that once that commit is integrated into mainline. We should be able to cut a release of the application without a problem. So it shouldn't break the release process and it shouldn't leave the user experience of the application in a broken state. Most of the time you will find that commits can just naturally be releasable. But sometimes it means that you have to create initially unused alternate code paths or use feature flags/toggles to manage code paths so that code can be integrated into mainline while still keeping the commit releasable.
+
 ## Git Patch Stack
 
-To help us follow these best practices we have developed a workflow on top of Git called [Git Patch Stack][] and built a small command Git extension to help streamline it. You can get a deeper understanding of this workflow and how to use it via our blog post, [How we should be using Git](https://uptechstudio.com/blog/how-we-should-be-using-git/).
+To help us follow these best practices we have developed a workflow on top of Git called [Git Patch Stack][] and built a small command line Git extension to help streamline it. You can get a deeper understanding of this workflow and how to use it via our blog posts, [Journey to Small Pull Requests][] and [How we should be using Git][].
 
 ## A Communication Tool
 
@@ -81,7 +99,7 @@ Update project.pbxproj
 
 Picture someone throwing this commit over a wall to you with no other information and they asked you to review it. What would you actually be able to say about it other than what is already included in the diff. You could maybe call out a small syntactical, style, or maybe some logic things strictly based on the diff itself. But you wouldn't be able to provide any value in the peer review on if the changes meet the **intent** because you don't know what the **intent** is. You can't analyze the **approach** and provide valuable analysis of it, nor can you understand if the change is the right change to make to reach the over arching **reason** for the change. We don't even know from the short summary provided what in the project.pbxproj file changed. As a result you'd have to read the entire diff of changes and infer the intent, approach, and reason.
 
-Making logical, purposeful, buildable, and testable commits with verbose commit messages may seem like overkill, but it becomes immensely useful for all the reasons stated in this guide, and more important when you no longer have access to the original developer who made the change! There are even benefits seen when the developer can't recall the intent, approach, and reason of changes that were made only a couple months ago.
+Making logical, purposeful, buildable, testable, not-necessarily complete, but releasable commits with verbose commit messages may seem like overkill, but it becomes immensely useful for all the reasons stated in this guide, and more important when you no longer have access to the original developer who made the change! There are even benefits seen when the developer can't recall the intent, approach, and reason of changes that were made only a couple months ago.
 
 #### What we are looking for
 
@@ -130,3 +148,5 @@ If you are having difficulties remembering the git commit message format and wha
 3. Make commits **without** (`-m`) and it will bring up the commit message template in your editor.
 
 [Git Patch Stack]: https://github.com/uptech/git-ps
+[How we should be using Git]: /blog/how-we-should-be-using-git/
+[Journey to Small Pull Requests]: /blog/journey-to-small-pull-requests/
