@@ -57,7 +57,7 @@ Just as import if not *more important* than the source code change is the commit
 
 Git as a tool has guidelines for commit messages to work best with git and it's various tools. This format is as follows:
 
-```text
+```
 Short summary of change (50 charecters or less in length)
 
 One ore more paragraphs of text hard wrapped at 72 characters in length.
@@ -67,7 +67,7 @@ One ore more paragraphs of text hard wrapped at 72 characters in length.
 
 We have built on the Official Git Commit Message Format to make sure we include this extremely important information. The following outlines our format.
 
-```text
+```
 Short summary of change (the what) - must be 50 characters or less in length
 
 One or more paragraphs explaining the INTENSION of the change with valuable
@@ -87,13 +87,13 @@ quickly look it up and gain even more context.
 
 #### Definitely **NOT** what we are looking for
 
-```text
+```
 Intergrate Sentry for crash handling
 ```
 
 or even worse
 
-```text
+```
 Update project.pbxproj
 ```
 
@@ -103,7 +103,7 @@ Making logical, purposeful, buildable, testable, not-necessarily complete, but r
 
 #### What we are looking for
 
-```text
+```
 Intergrate Sentry for crash handling
 
 We did this because we previously had to get rid of MS AppCenter because
@@ -129,7 +129,7 @@ that get deployed separately.
 If you are having difficulties remembering the git commit message format and what you need to provide in your message you are in luck. Git provides a commit message template feature. You can set it up with the follownig steps.
 
 1. Create your template file in a safe place with the following content. Common practice is to put it in `~/.gitmessage`.
-	```text
+	```
 	Short summary of change (the what) - must be 50 characters or less in length
 
 	INTENSION paragraph(s) with context (Hard wrapped at 72 characters)
@@ -141,7 +141,7 @@ If you are having difficulties remembering the git commit message format and wha
 	associated ticket identifers
 	```
 2. Configure Git to use your new commit message template
-	```text
+	```
 	$ git config commit.template ~/.gitmessage
 	```
 3. Make commits **without** (`-m`) and it will bring up the commit message template in your editor.
