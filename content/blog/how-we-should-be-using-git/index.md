@@ -189,7 +189,7 @@ git commit
 
 When it prompts for the commit message we provide something like the following, making sure to provide a clear description of what changed, why it was changed, and the necessary context of how it is or will be used.
 
-```text
+```
 WIP: Add login screen
 
 So that users will be able to login to their account.
