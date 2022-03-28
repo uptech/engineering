@@ -61,6 +61,10 @@ It is also worth noting that `zola serve` will watch the files for changes and r
 
 Build and deployment of this site will happen automatically through Netlify so you don't need to worry about it.
 
+## License
+
+Copyright © 2016 - 2022 UpTech Works, LLC. All rights reserved.
+
 [CommonMark]: https://commonmark.org
 [Zola]: https://www.getzola.org
 [Netlify]: https://netlify.com
