@@ -212,7 +212,7 @@
       "position":  1 ,
       "name": "Home",
       "item": "{{ url_item | safe }}"
-    },
+    }
     {% else %}
       {% set paths = page_path | trim_start_matches(pat="/") | trim_end_matches(pat="/") | split(pat="/") %}
       {% for val in paths %}
@@ -232,21 +232,39 @@
           },
           {% set_global index = 2 %}
           {% set_global url_item = url_item ~ val ~ "/" %}
+          {% if index == paths | length + 1 %}
+          {
+            "@type": "ListItem",
+            "position":  {{ index }} ,
+            "name": "{{ name }}",
+            "item": "{{ url_item | safe }}"
+          }
+          {% else %}
           {
             "@type": "ListItem",
             "position":  {{ index }} ,
             "name": "{{ name }}",
             "item": "{{ url_item | safe }}"
           },
+          {% endif %}
         {% else %}
           {% set_global index = index + 1 %}
           {% set_global url_item = url_item ~ val ~ "/" %}
+          {% if index == paths | length + 1 %}
+          {
+            "@type": "ListItem",
+            "position":  {{ index }} ,
+            "name": "{{ name }}",
+            "item": "{{ url_item | safe }}"
+          }
+          {% else %}
           {
             "@type": "ListItem",
             "position":  {{ index }} ,
             "name": "{{ name }}",
             "item": "{{ url_item | safe }}"
           },
+          {% endif %}
         {% endif %}
       {% endfor %}
     {% endif %}
