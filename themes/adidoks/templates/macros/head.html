@@ -203,8 +203,9 @@
 {% set url_item = "/" %}
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    "itemListElement": [
     {% if page_path == "/" %}
     {
       "@type": "ListItem",
@@ -249,6 +250,7 @@
         {% endif %}
       {% endfor %}
     {% endif %}
+    ]
   }
 </script>
 
