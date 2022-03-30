@@ -200,7 +200,7 @@
 
 {% set url_prefix = get_url(path="/") | split(pat="://") | first %}
 {% set url_main = get_url(path="/") | split(pat="://") | last %}
-{% set url_item = "/" %}
+{% set url_item = url_prefix ~ "://" ~ url_main ~ "/" %}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
