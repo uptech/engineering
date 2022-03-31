@@ -27,11 +27,11 @@ To aid with making sure our commits are the valuable kind and ensure they play n
 
 ### Logical
 
-**Each commit should be a logical unit.** This means it should include only changes related to that logical unit. This includes related code changes, automated test changes, tooling changes, etc. This is **crucial** to suppoort the ability to easily revert changes when necessary. It is also crucial for aiding in doing any sort of git commit tree spelunking.
+**Each commit should be a logical unit.** This means it should include only changes related to that logical unit. This includes related code changes, automated test changes, tooling changes, etc. This is **crucial** to support the ability to easily revert changes when necessary. It is also crucial for aiding in doing any sort of git commit tree spelunking.
 
 ### Buildable
 
-**Each commit should be buildable.** This means that each commit must NOT break the build tooling or build process of the application. This is important to make sure that all the Git tooling (e.g. git bisect) continues to be able to be used. It also more clearly suppoorts Git tree spelunking and hot fixing as no matter what commit you pick it should be in a buildable state.
+**Each commit should be buildable.** This means that each commit must NOT break the build tooling or build process of the application. This is important to make sure that all the Git tooling (e.g. git bisect) continues to be able to be used. It also more clearly supports Git tree spelunking and hot fixing as no matter what commit you pick it should be in a buildable state.
 
 ### Testable
 
@@ -51,7 +51,7 @@ To help us follow these best practices we have developed a workflow on top of Gi
 
 ## A Communication Tool
 
-Just as import if not *more important* than the source code change is the commit message itself. This is the only mechanism a commit author has to communicate very important things like, **what**, **intentension**, **reason (a.k.a. why)**, **approach (a.k.a. how)**, all crafted with **context**. Having this crucial information bound to the source code change is amazingly powerful and valuable when developing and maintaining an application over time.
+Just as import if not *more important* than the source code change is the commit message itself. This is the only mechanism a commit author has to communicate very important things like, **what**, **intention**, **reason (a.k.a. why)**, **approach (a.k.a. how)**, all crafted with **context**. Having this crucial information bound to the source code change is amazingly powerful and valuable when developing and maintaining an application over time.
 
 We have found it is also a useful communication tool for some automation tasks. Specifically for including Changelog entry information so that we don't create unnecessary conflicts in the commit itself. [Git Changelog][] can then use this information to generate our Changelog files for us.
 
@@ -73,14 +73,14 @@ We have built on the Official Git Commit Message Format to make sure we include 
 Short summary of change (the what) - 50 characters or less in
 length
 
-One or more paragraphs explaining the INTENSION of the change with
+One or more paragraphs explaining the INTENTION of the change with
 valuable context. (Hard wrapped at 72 characters)
 
 One or more paragraphs explaining the REASON for the change with
 valuable context. (Hard wrapped at 72 characters)
 
 One or more paragraphs explaining the APPROACH taken to attempt to achieve
-the INTENSION or a portion of the INTENSION.
+the INTENTION or a portion of the INTENTION.
 (Hard wrapped at 72 characters)
 
 Associated Ticket Identifers
@@ -137,12 +137,12 @@ If you are having difficulties remembering the git commit message format and wha
 	```
 	# Short summary of change (the what) ( <= 50 chars )
 
-	# INTENSION of the change with context (Hard wrapped at 72 chars) 
+	# INTENTION of the change with context (Hard wrapped at 72 chars) 
 
 	# REASON for the change with context (Hard wrapped at 72 chars)
 
-	# APPROACH taken to attempt to achieve the INTENSION or a portion
-	# of the INTENSION. (Hard wrapped at 72 characters)
+	# APPROACH taken to attempt to achieve the INTENTION or a portion
+	# of the INTENTION. (Hard wrapped at 72 characters)
 
 	# Associated Ticket Identifers
 
