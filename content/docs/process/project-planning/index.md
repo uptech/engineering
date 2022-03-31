@@ -25,7 +25,7 @@ The first artifact for this phase is a Systems Level Architecture diagram that t
 
 ## Project Detailed Spec
 
-The Project Detailed Spec is a document that the Tech Lead is again responsible for. This document defines the project scope and goals for review as well as the Systems Architecture to provide context. Beyond that it is a vehicle to explores the next tier down of technical problem solving. This could be how the various components would be interacting with each other. Is it done via GraphQL, REST, etc? What are some rough ideas of what the key functional data is needed to be passed between these system components. These types of questions and thinking. It isn't to formalize 100% exactly what the payloads will look like. It is just to get an idea and an understanding to gain more confidence.
+The Project Detailed Spec is a document that the Tech Lead is again responsible for. This document defines the project scope and goals for review as well as the Systems Architecture to provide context. Beyond that it is a vehicle to explore the next tier down of technical problem solving. This could be how the various components would be interacting with each other. Is it done via GraphQL, REST, etc? What are some rough ideas of what the key functional data is needed to be passed between these system components. These types of questions and thinking. It isn't to formalize 100% exactly what the payloads will look like. It is just to get an idea and an understanding to gain more confidence.
 
 The process of the Tech Lead walking through, planning this out and documenting it helps them start to think through all of the components and how they will interact to accomplish the defined goals. This also helps identify up front major unknowns, concerns, and blockers very early on in the project so that those things can be focused on from the get go.
 
@@ -41,4 +41,4 @@ The purpose of this meeting is for all the members to get comfortable with all o
 
 ## Upfront Planning?
 
-I thought Uptech Studio did Agile. We do! Nothing in Agile says that you shouldn't do up front planning. Agile is all about iterating and getting feedback throughout the process and adjusting to that feedback. But nothing in it says you shouldn't think about how you would build or implement something. Our experience over the years has enformed our opinion that doing a small amount of up front planning like this is often a game changer in terms of the success of a project.
+I thought Uptech Studio did Agile. We do! Nothing in Agile says that you shouldn't do up front planning. Agile is all about iterating and getting feedback throughout the process and adjusting to that feedback. But nothing in it says you shouldn't think about how you would build or implement something. Our experience over the years has informed our opinion that doing a small amount of up front planning like this is often a game changer in terms of the success of a project.
