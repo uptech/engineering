@@ -13,7 +13,7 @@ toc = true
 top = false
 +++
 
-The **Roadmapping** phase is where the Tech Lead and the Product person collaborate together to define a Roadmap of Milestones for the project. During this process we take a number of things into account.
+The **Roadmapping** phase is where the Tech Lead and the Product representative collaborate together to define a Roadmap of Milestones for the project. During this process we take a number of things into account.
 
 * technical dependencies & constraints
 * best way to show client progress without fabricating Demos or doing Demo Driven Development.
