@@ -28,7 +28,7 @@ A **squad** is simply a group of people organized around delivering a particular
 
 ### Squad Representatives
 
-Squad **representatives** are a subset of the Squad that is responsible for representing the various competencies to the client. Generally there is one person from each of the necessary competencies, e.g. Design, Engineering, Product. Squad Representatives are generally comitted for the lifetime of the project as they are the face of the squad to the client. If projects are long term we may shift representives around but generally my try to minimize that.
+Squad **representatives** are a subset of the Squad that is responsible for representing the various competencies to the client. Generally there is one person from each of the necessary competencies, e.g. Design, Engineering, Product. Squad Representatives are generally comitted for the lifetime of the project as they are the face of the squad to the client. If projects are long term we may shift representives around but generally try to minimize that.
 
 ## Guilds
 
@@ -46,7 +46,7 @@ Our primary communication mechanism for Guilds is **Slack Channels**, e.g. **#mo
 
 ## Why Squads & Guilds?
 
-Basically we needed a way to facilitate making sure we were focusing and delivering for our clients (the focus of the Squad) while also facilitating cross-polonatiion and elimination of siloing across the organization (the focus of the Guild). We have found this structure and the intention behind it to be extremely effective on both these fronts.
+Basically we needed a way to facilitate making sure we were focusing and delivering for our clients (the focus of the Squad) while also facilitating cross-pollination and elimination of siloing across the organization (the focus of the Guild). We have found this structure and the intention behind it to be extremely effective on both these fronts.
 
 Below you can see a visualization of what Squad might look like in relation to Guilds.
 
