@@ -18,8 +18,15 @@ We work primarily in two different tech stacks for backend development.
 * [TypeScript][] with [NestJS][]
 * [Ruby][] with [Rails][]/[Sinatra][]
 
+### Libraries
+
+#### JavaScript/TypeScript
+
+* [Luxon][] ([@types](https://www.npmjs.com/package/@types/luxon)): Improves working with dates and times.
+
 [TypeScript]: https://www.typescriptlang.org
 [NestJS]: https://nestjs.com
 [Ruby]: https://www.ruby-lang.org
 [Sinatra]: http://sinatrarb.com
 [Rails]: https://rubyonrails.org
+[Luxon]: https://www.npmjs.com/package/luxon

@@ -18,5 +18,13 @@ On the Web Frontend side of things we focus our energy on two primary frameworks
 * [Angular][]
 * [React][]
 
+### Libraries
+
+#### JavaScript/TypeScript
+
+* [Luxon][] ([@types](https://www.npmjs.com/package/@types/luxon)): Improves working with dates and times.
+
+
 [Angular]: https://angular.io
 [React]: https://reactjs.org
+[Luxon]: https://www.npmjs.com/package/luxon
