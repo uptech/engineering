@@ -13,11 +13,11 @@ toc = true
 top = false
 +++
 
-Over the years we have determined that there are some pretty serious issues/drawbacks with how people classicly think of pull requests and the concept of **feature branches**, which seemingly & incorrectly have be intangibly linked for some time. Specifically, we have identified that the use of the feature branch concept tends to:
+Over the years we have determined that there are some pretty serious issues/drawbacks with how people classicly think of pull requests and the concept of **feature branches**, which seemingly & incorrectly have been intangibly linked for some time. Specifically, we have identified that the use of the feature branch concept tends to:
 
 * promote non-logical commits, prohibiting certain Git functionalities (bisect, etc.) from working & making **valuable** peer review impossible
 * promote extremely large pull requests, making **valuable** peer reviews impossible & time consuming
-* promote lack of care around structuring commits which ofter results in people leaving WIP commits in pull requests
+* promote lack of care around structuring commits which often results in people leaving WIP commits in pull requests
 * have extremely heavy overhead in managing feature branches that depend on other feature branches
 * often make the Git tree (history) extremely difficult to read & reason about
 
@@ -27,9 +27,6 @@ To understand why we developed this workflow and the journey we took to finally 
 
 For more details on how to use Git Patch Stack you can checkout out our blog post [How we should be using Git][]. This provides the background and conceptual thinking around Git Patch Stack while also providing an example.
 
-Beyond that you can checkout the [Git Patch Stack Guide][]. It provides examples of common tasks you would take and details around them.
-
-[Git Patch Stack]: https://github.com/uptech/git-ps 
+[Git Patch Stack]: https://github.com/uptech/git-ps-rs
 [Journey to Small Pull Requests]: /blog/journey-to-small-pull-requests/
 [How we should be using Git]: /blog/how-we-should-be-using-git/
-[Git Patch Stack Guide]: https://github.com/uptech/git-ps/wiki/Guide
