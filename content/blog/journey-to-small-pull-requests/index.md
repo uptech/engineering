@@ -34,7 +34,7 @@ We were following the [GitHub Flow][] and using feature branches, which in turn 
 
 ## Alternatives
 
-So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continous Delivery Methodology and Trunk Based Development, as the others all seem to use feature branches.
+So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continous Integration Methodology and Trunk Based Development, as the others all seem to use feature branches.
 
 Both the Continous Integration Methodology and Trunk Based Development are focused around getting small, logical, buildable, testable, not-necessarily complete changes into mainline as quickly as possible. They both see this as a core principle to support other developers on the team being aware of the work being done and enabling contribution and planning around it.
 
@@ -46,9 +46,9 @@ Beyond that they even go as far as using Feature Toggles to facilitate including
 
 ## What about Peer Review?
 
-One of our driving forces for looking at alternatives was to eliminate our problems with our peer reviews. Turns out that Continuous Delivery & Trunk Based Development don't provide much guidance on that front.
+One of our driving forces for looking at alternatives was to eliminate our problems with our peer reviews. Turns out that Continuous Integration & Trunk Based Development don't provide much guidance on that front.
 
-Many Continous Delivery & Trunk Based Development teams forego what we think of as a peer review process coming from feature branches. Instead they opt for getting the small, logical, buildable, testable, but not-necessarily complete changes into mainline as quickly as possible and then in theory go back and review each of the commits after the fact. This is known as **Post-commit** review. What we classically think of as peer review with feature branches is known as **Pre-commit** review. The difference is simply **Post-commit** happens after a commit is integrated into mainline while the **Pre-commit** happens prior to a change being integrated into mainline.
+Many Continous Integration & Trunk Based Development teams forego what we think of as a peer review process coming from feature branches. Instead they opt for getting the small, logical, buildable, testable, but not-necessarily complete changes into mainline as quickly as possible and then in theory go back and review each of the commits after the fact. This is known as **Post-commit** review. What we classically think of as peer review with feature branches is known as **Pre-commit** review. The difference is simply **Post-commit** happens after a commit is integrated into mainline while the **Pre-commit** happens prior to a change being integrated into mainline.
 
 So we then started exploring the tools and processes around **Post-commit** peer review. Turns out that there isn't much there and the few tools that do exist are relatively antiquated and also require a full shift in terms of tooling and mentality. This was effectively a no-go for us as we work with many different clients and dev teams which all use [GitHub][]/[Bitbucket][] pull requests for peer review. So we needed to figure out a way to do **small pull requests** for **Pre-commit** peer reviews.
 
@@ -56,7 +56,7 @@ So we then started exploring the tools and processes around **Post-commit** peer
 
 Following our only path forward for peer review, **Pre-commit**, we started making **small pull requests** scoped down just as people do in Continous Integration and Trunk Based Development. This was great as we were seeing the benefits of **small pull requests** and see that it definitely does address the issues we identified at the beginning. However there was a ton of extra overhead and complexities in terms of managing these branches locally.
 
-Generally we focus on implementing a specific feature/change. In order to do this we build up context around it in our mind so that we can plan and implement an appropriate change to achieve our goal. This is great when doing feature branches because there is a 1-to-1 mapping between that context and the branch. However, remember we are creating a number of pull requests that are small, logical, buildable, testable, and not-necessarily complete changes that when combined should accomplish the end goal of the feature/change. Continous Delivery and Trunk Based Development teams sometimes refer to these smaller changes as Proof of Work. Just like when you were a kid in school and the teacher made you show your work on your math homework. Each of the small changes should be logical steps showing how you achieved your end goal. You might think it is natural to just create a branch for each of these logical changes. However, what you quickly find is that the logical changes begin to have dependencies on other logical changes you have made.
+Generally we focus on implementing a specific feature/change. In order to do this we build up context around it in our mind so that we can plan and implement an appropriate change to achieve our goal. This is great when doing feature branches because there is a 1-to-1 mapping between that context and the branch. However, remember we are creating a number of pull requests that are small, logical, buildable, testable, and not-necessarily complete changes that when combined should accomplish the end goal of the feature/change. Continous Integration and Trunk Based Development teams sometimes refer to these smaller changes as Proof of Work. Just like when you were a kid in school and the teacher made you show your work on your math homework. Each of the small changes should be logical steps showing how you achieved your end goal. You might think it is natural to just create a branch for each of these logical changes. However, what you quickly find is that the logical changes begin to have dependencies on other logical changes you have made.
 
 This means for you to continue being able to develop the feature you effectively have to create your next branch on top of the previous branch and so on. You then end up with effectively a chain of branches composing up your feature. The only one you can actually open a pull request for is the inner most branch. This is because if you opened a pull request for any of the other branches it would also include the changes beneath it as well. Putting us back in the camp of **big pull requests** which we don't want to be in.
 
@@ -122,7 +122,7 @@ Further details on this process of outside-in and inside-out in relation to this
 
 ## Ticketing Alignment
 
-When we were doing feature branches before the ticketing alignment was trivial. We basically had a 1-to-1 mapping between a user story and feature pull request. With the Patch Stack methodology we had to make a choice. Do we have multiple patches reference a single user story. Or do we modify how we do ticketing so that it better aligns with the logical patches.
+When we were doing feature branches before the ticketing alignment was trivial. We basically had a 1-to-1 mapping between a user story and feature pull request. With the Git Patch Stack methodology we had to make a choice. Do we have multiple patches reference a single user story or do we modify how we do ticketing so that it better aligns with the logical patches.
 
 After thinking about it briefly we decided that it makes the most sense to just have multiple patches reference the same user story. Each of the patches could also reference any related sub-tasks that belong to the parenting user story. The key for this to be successful is really just providing the necessary context in the patch commit messages.
 
@@ -141,4 +141,4 @@ For a deeper dive on [Git Patch Stack][], this workflow and concepts to help ide
 [GitHub]: https://github.com
 [Bitbucket]: https://bitbucket.org
 [Git]: https://git-scm.com
-[Git Patch Stack]: https://github.com/uptech/git-ps
+[Git Patch Stack]: https://github.com/uptech/git-ps-rs
