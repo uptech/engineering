@@ -165,7 +165,7 @@ Achieving the full value of the methodology requires that these rules are follow
 - a patch must provide a clear description of what changed, why it was changed, and the necessary context of how it is or will be used
 - patches must be submitted individually for review
 
-In addition to formally defining the rules, we have built [git-ps][], an OSS Git command line extension to facilitate making this workflow and methodology even easier to use.
+In addition to formally defining the rules, we have built [git-ps-rs][], an OSS Git command line extension to facilitate making this workflow and methodology even easier to use.
 
 ## Getting the Feel for It
 
@@ -181,11 +181,13 @@ So we figure out the ideal interface that should get added to the our client API
 
 Given we are following Outside-In we also recognize that we are at a boundary between application architecture concepts, specifically the UI and the client API. This is our clue that we need a patch to house this logical (UI) piece of the puzzle.
 
-So we add a patch on top of our stack by first staging the UI changes, `git add .`, and then creating the patch.
+So we add a patch on top of our stack by first staging the UI changes, `gps add .`, and then creating the patch.
 
 ```
-git commit
+gps create-patch
 ```
+
+There is an alias of `gps c` for short as this operation is so common.
 
 When it prompts for the commit message we provide something like the following, making sure to provide a clear description of what changed, why it was changed, and the necessary context of how it is or will be used.
 
@@ -206,10 +208,10 @@ Now that we have created our WIP patch for the UI layer. We move onto to the nex
 
 So we extend the client API by adding our ideal interface and starting to implement the functionality behind it, making any necessary adjustments to the interface as we go.
 
-Soon we realize that we don't have a library to facilitate interacting with the REST API. We also recognize this as yet another boundary in the application architecture. Therefore, we create another patch on top of our stack by staging the changes, `git add .` and then committing.
+Soon we realize that we don't have a library to facilitate interacting with the REST API. We also recognize this as yet another boundary in the application architecture. Therefore, we create another patch on top of our stack by staging the changes, `gps add .` and then committing.
 
 ```
-git commit
+gps create-patch
 ```
 
 We provide the following message with the patch.
@@ -230,8 +232,10 @@ the REST call.
 We have added a couple patches to our Patch Stack and are ready to check where we are in our process. To do this we simply list our patch stack using the following.
 
 ```
-git ps ls
+gps list
 ```
+
+An alias for this command is provided as well, `gps ls`.
 
 It outputs a view of all the patches on our stack.
 
@@ -246,10 +250,10 @@ Things look good and we are reminded that we just added the `BackendClient.login
 
 So we do some research and find what we think is the best REST API library and add it to our `Package.swift`, making it available to our app.
 
-This is yet another boundary in our application architecture and therefore we create a new logical patch for it by staging the changes, `git add .`, and committing.
+This is yet another boundary in our application architecture and therefore we create a new logical patch for it by staging the changes, `gps add .`, and committing.
 
 ```
-git commit
+gps create-patch
 ```
 
 With the following message:
@@ -270,7 +274,7 @@ It is worth noting that we do **not** use the "WIP:" prefix in our patch summary
 Let's check out our stack of patches now.
 
 ```
-git ps ls
+gps list
 ```
 
 It outputs the following.
@@ -283,7 +287,7 @@ It outputs the following.
 
 ### Reorder our Patches by Dependency
 
-Things are looking pretty good but our patches are not ordered correctly based on dependencies. Let's fix this by reordering them using `git ps rebase` and changing them into the following order.
+Things are looking pretty good but our patches are not ordered correctly based on dependencies. Let's fix this by reordering them using `gps rebase` and changing them into the following order.
 
 ```
 pick 4387d1 Add Siesta, the elegant way to write REST clients
@@ -298,12 +302,12 @@ This order is correctly ordered by dependency, as "Add Siesta..." is the inner m
 At this point we have a logical, buildable, testable patch that is ready to be submitted for review. However, lets make sure that our patch stack is good with all the other work people have recently published to upstream. We do this as follows.
 
 ```
-git ps pull
+gps pull
 ```
 
 This takes the stack of patches and essentially lifts them up and replays them on top of the upstream changes.
 
-The `git ps pull` ran successfully with no conflicts. So all the patches in our stack are good.
+The `gps pull` ran successfully with no conflicts. So all the patches in our stack are good.
 
 ```
   2     af73d2 WIP: Add login screen
@@ -317,10 +321,14 @@ The `git ps pull` ran successfully with no conflicts. So all the patches in our 
 We now request review of our "Add Siesta..." patch as it is a complete logical patch and we want people to be able to review it while we are working on implementing the rest of our feature.
 
 ```
-git ps rr 0
+gps request-review 0
 ```
 
-In the case where we initially request review of a patch with GitHub it will dump the URL that creates the pull request to the command line. That way all you have to do is click that URL to create the pull request.
+An alias for this command is provided as well, `gps rr <patch-index>`.
+
+For this example lets assume that we are using [GitHub][] and have installed the `request_review_post_sync` hook that integrates with [GitHub][].
+
+In the case where we initially request review of a patch it creates a pull request for us on [GitHub][].
 
 Getting feedback on this inner most dependency first is important as the architectural decisions around it can impact the work in the layers above.
 
@@ -330,9 +338,9 @@ One of the benefits of working in a stack of patches is that we can continue bui
 
 Now that we have the Siesta library available to us, we go back to our `BackendClient.login(username:password:)` method and finish implementing it using the Siesta library.
 
-Once we are done we create a new patch on our stack using `git commit -m "finish BackendClient.login(username:password:)"`. *Note*: We don't care so much about this patch message as it is a temporary patch. We just need to know what it does in relation to the other patches in our stack.
+Once we are done we create a new patch on our stack with the message, "finish BackendClient.login(username:password:)", using `gps add` & `gps create-patch`. *Note*: We don't care so much about this patch message as it is a temporary patch. We just need to know what it does in relation to the other patches in our stack.
 
-If we checkout our stack of patches with `git ps ls` it looks something like this now.
+If we checkout our stack of patches with `gps list` it looks something like this now.
 
 ```
   3     df71da finish BackendClient.login(username:password:)
@@ -345,7 +353,7 @@ If we checkout our stack of patches with `git ps ls` it looks something like thi
 
 Looks like we have the makings of another logical patch. However, it is made up of two separate patches, the "WIP: Add BackendClient.login..." patch and the "finish BackendClient.login..." patch.
 
-Lets reorder these patches and squash them together using `git ps rebase` to turn them into a single logical patch.
+Lets reorder these patches and squash them together using `gps rebase` to turn them into a single logical patch.
 
 ```
 pick 4387d1 Add Siesta, the elegant way to write REST clients
@@ -356,7 +364,7 @@ pick af73d2 WIP: Add login screen
 
 When we save and quit the editor it will open the squashed patch descriptions up to create the singular patch message. We remove the temporary patch message and remove the "WIP:" prefix from the summary as this is now a complete, buildable, testable, logical patch.
 
-If we list our patches with `git ps ls` again. Our patch stack now looks as follows.
+If we list our patches with `gps list` again. Our patch stack now looks as follows.
 
 ```
   2     af73d2 WIP: Add login screen
@@ -370,11 +378,11 @@ We just got a notification that someone reviewed our first patch and requested s
 
 So looking at our stack of patches we need to edit the "Add Siesta..." patch to change it to Alamofire.
 
-We can accomplish this by using `git ps rebase` and changing the "Add Siesta..." patches rebase command from `pick` to `edit`. When we save and quit the editor it will drop us into being able to edit the patch we marked with `edit`.
+We can accomplish this by using `gps rebase` and changing the "Add Siesta..." patches rebase command from `pick` to `edit`. When we save and quit the editor it will drop us into being able to edit the patch we marked with `edit`.
 
 So we make the necessary changes, removing Siesta from the `Package.swift` and adding Alamofire.
 
-We then stage these changes with `git add .` and amend them to the "Add Siesta..." patch using `git commit --amend`. This in turn opens our editor with the patch message allowing us to update it.
+We then stage these changes with `gps add .` and amend them to the "Add Siesta..." patch using `gps amend-patch`. This in turn opens our editor with the patch message allowing us to update it.
 
 ```
 Add Alamofire as a REST client
@@ -387,7 +395,7 @@ method to make the login REST API request.
 
 Once we have saved and quit the editor the patch has been updated. However, we still need to complete the rebase which stopped in the middle.
 
-To do this we simply run `git rebase --continue`.
+To do this we simply run `gps rebase --continue`.
 
 ### Re-Request Review
 
@@ -401,7 +409,7 @@ If we checkout our patch stack it should look something like this.
 
 The `rr+` is indicating that there have been changes made to that patch since we last requested review of it. So we need to re-request review so that the reviewer can see the recent changes we have made.
 
-We accomplish this by simply running `git ps rr 0` again.
+We accomplish this by simply running `gps request-review 0` again.
 
 This will update the previously created pull request for this patch so that the reviewer and can re-review it.
 
@@ -409,11 +417,11 @@ This will update the previously created pull request for this patch so that the 
 
 Now that our core dependency is ready for review again we can focus on the layer above that again. Since our lower layer dependency changed we need to update our "Add BackendClient.login..." patch to use Alamofire instead of Siesta.
 
-To do this we simply use `git ps rebase` again and mark the "Add BackendClient.login..." patch for `edit`. It drops us back to the console waiting for us to edit that patch.
+To do this we simply use `gps rebase` again and mark the "Add BackendClient.login..." patch for `edit`. It drops us back to the console waiting for us to edit that patch.
 
-We do so by making the necessary changes, staging them with `git add .`, and then amending them with `git commit --amend`. When prompted to the update the message we simply save and quit the editor because the message is still correct.
+We do so by making the necessary changes, staging them with `gps add .`, and then amending them with `gps amend-patch`. When prompted to the update the message we simply save and quit the editor because the message is still correct.
 
-Then we run `git rebase --continue` to have it finish the rebase process.
+Then we run `gps rebase --continue` to have it finish the rebase process.
 
 Leaving our patch stack as follows.
 
@@ -425,13 +433,13 @@ Leaving our patch stack as follows.
 
 ### Request Review of the 2nd patch
 
-Now that we have our second patch complete. We pull the upstream changes again with `git ps pull` and then request review of our second patch with the following.
+Now that we have our second patch complete. We pull the upstream changes again with `gps pull` and then request review of our second patch with the following.
 
 ```
-git ps rr 1
+gps request-review 1
 ```
 
-Then we click the URL to create the pull request, making it ready for feedback and leaving our stack of patches in the following state.
+Creating a pull request and leaving our stack of patches in the following state.
 
 ```
   2     af73d2 WIP: Add login screen
@@ -443,23 +451,25 @@ Then we click the URL to create the pull request, making it ready for feedback a
 
 Meanwhile the approval notice has come in for our "Add Alamofire..." patch.
 
-So we publish this patch upstream by running the following.
+So we integrate this patch upstream by running the following.
 
 ```
-git ps pub 0
+gps integrate 0
 ```
+
+There is an alias for this command as well, `gps int <patch-index>`.
 
 This will push that patch up to the remote branch leaving our stack of patches in the following state.
 
 ```
   2     af73d2 WIP: Add login screen
   1 rr  23d7a6 Add BackendClient.login(username:password:) method
-  0 p   4387d1 Add Alamofire as a REST client
+  0 int 4387d1 Add Alamofire as a REST client
 ```
 
 ### Pull and Collapse
 
-We decided to pull in any changes from upstream with `git ps pull` making our patch stack now look as follows.
+We decided to pull in any changes from upstream with `gps pull` making our patch stack now look as follows.
 
 ```
   1     af73d2 WIP: Add login screen
@@ -472,22 +482,22 @@ You will notice that the "Add Alamofire..." patch has left our patch stack. This
 
 We have now worked our way back up to the outer most layer of our application architecture, the UI. Here we make changes to wire the submit button of the Login screen up to the `BackendClient.login(username:password:)` method completing this feature.
 
-Since our "WIP: Add login screen" patch is the top most patch. We can simply amend these changes to that patch by staging the changes with `git add .` and doing the following:
+Since our "WIP: Add login screen" patch is the top most patch. We can simply amend these changes to that patch by staging the changes with `gps add .` and doing the following:
 
 ```
-git commit --amend
+gps amend-patch
 ```
 
 This opens the patch message in our editor and allows us to remove the "WIP:" prefix from the patch summary.
 
-If we list our patch stack with `git ps ls` it should look as follows.
+If we list our patch stack with `gps list` it should look as follows.
 
 ```
   1     af73d2 Add login screen
   0 rr  23d7a6 Add BackendClient.login(username:password:) method
 ```
 
-Then we integrate upstream changes with `git ps pull` and request review of our final patch using `git ps rr 1`.
+Then we integrate upstream changes with `gps pull` and request review of our final patch using `gps request-review 1`.
 
 Leaving our patch stack in the following state.
 
@@ -506,30 +516,30 @@ You might be saying to yourself, "Hey, but we have this other feature's patches 
 
 Over the next couple hours reviewers find time to review the other two patches and they are both approved.
 
-We publish them using `git ps pub 0` and `git ps pub 1` changing our patch stack state to the following.
+We integrate them using `gps integrate 0` and `gps integrate 1` changing our patch stack state to the following.
 
 ```
-  1 p   af73d2 Add login screen
-  0 p   23d7a6 Add BackendClient.login(username:password:) method
+  1 int af73d2 Add login screen
+  0 int 23d7a6 Add BackendClient.login(username:password:) method
 ```
 
-After publishing these patches we run `git ps pull` to integrate any upstream changes. In this case it includes the two patches we just published. So when we run `git ps ls` now we see an empty patch stack.
+After integrating these patches we run `gps pull` to integrate any upstream changes. In this case it includes the two patches we just published. So when we run `gps list` now we see an empty patch stack.
 
 ### Feature Complete
 
-At this point our feature has been developed, reviewed, and published. We are done with this task and can now move on to the next task.
+At this point our feature has been developed, reviewed, and integrated. We are done with this task and can now move on to the next task.
 
 ## It is just Git
 
-Fundamentally [git-ps][] is just a light layer of automation of underlying Git commands. So it is **very important** to know Git. Especially in relation to this idea of iterating on your patches to a point where they are ready for review. We have started a [git-ps Guide](https://github.com/uptech/git-ps/wiki/Guide) where we enumerate various activities that someone might want to perform, and we provide examples of how they can be accomplished with Git and [git-ps][].
+Fundamentally [git-ps-rs][] is just a light layer of automation of underlying Git commands. So it is **very important** to know Git. Especially in relation to this idea of iterating on your patches to a point where they are ready for review.
 
-If we just look at [interactive rebases](https://git-scm.com/docs/git-rebase) in Git we see that there are many things you can do within an interactive rebase. For example you can squash commits, fixup commits, edit commits, reorder commits, reword commit descriptions, and many more. Also there are other Git commands that can aid in this evolution of your patches. For example [`git add -p`](https://drewdeponte.com/blog/git-add-patch-wont-split/) and [`git commit --amend`](https://git-scm.com/docs/git-commit).
+If we just look at [interactive rebases](https://git-scm.com/docs/git-rebase) in Git we see that there are many things you can do within an interactive rebase. For example you can squash commits, fixup commits, edit commits, reorder commits, reword commit descriptions, and many more. Also there are other Git commands that can aid in this evolution of your patches. For example [`git add -p`](https://drewdeponte.com/blog/git-add-patch-wont-split/) and [`git commit --amend`](https://git-scm.com/docs/git-commit). We have provided some commands to help with these, `gps add -p` & `gps amend-patch`.
 
 Beyond that, it is worth understanding how you can use these tools to do things like [Split Commits Up](https://drewdeponte.com/blog/git-splitting-commits/). Please take the time to make sure you understand these Git commands and how to use them. It will not only improve your workflow within this methodology but with using Git in general.
 
-And remember, this is just Git. If we ever run into situations where we need to step outside this methodology-say, to use a branch-there is nothing preventing us from doing so. In fact [git-ps][] sees any branch with a tracked upstream branch as a patch stack. So you can think of branches as separate stacks of patches.
+And remember, this is just Git. If we ever run into situations where we need to step outside this methodology-say, to use a branch-there is nothing preventing us from doing so. In fact [git-ps-rs][] sees any branch with a tracked upstream branch as a patch stack. So you can think of branches as separate stacks of patches.
 
 We have found this flexibility to be useful when working with clients that don't follow the Patch Stack methodology. It enables us to still follow the practices of Patch Stack locally despite our client using a different methodology, e.g. Feature Branch development. This enables us to get at least some of the beneficial values of the Patch Stack methodology while still playing nice with others.
 
-[git-ps]: https://github.com/uptech/git-ps
-
+[git-ps-rs]: https://github.com/uptech/git-ps-rs
+[GitHub]: https://github.com
