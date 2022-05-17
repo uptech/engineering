@@ -1,25 +1,32 @@
 // Color system
 
 $white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$gray-100: #F6F6F7;
+$gray-200: #ECEDEE;
+$gray-300: #DADBDE;
+$gray-400: #B4B8BD;
+$gray-500: #8F949C;
+$gray-600: #69717B;
+$gray-700: #444D5A;
+$gray-800: #2C323A;
+$gray-900: #16191D;
+$black:    #16191D;
 
-$yellow:   #ffe000;
-$black:    #1d2d35;
+
+$blue:    #2EB4FF;
+// $indigo:  #6610f2 !default;
+$purple:   #7551F8;
+// $pink:    #d63384 !default;
+$red:     #FC6580;
+// $orange:  #fd7e14 !default;
+$yellow:   #FFDB2A;
+$green:   #43EA9A;
+// $teal:    #20c997 !default;
+// $cyan:    #0dcaf0 !default;
+
 $beige:    #fbf7f0;
-// $red:      #e55235;
-$purple:   #5d2f86;
 $brown:    #aa9c84;
-
-$blue-300: #8ed6fb;
+$blue-300: #82D2FF;
 $pink-500: #d32e9d;
 
 $primary: $purple;
@@ -58,13 +65,13 @@ $navbar-light-toggler-icon-bg: none;
 // Settings for the `<body>` element.
 
 $body-bg:                   $white;
-$body-color:                $black;
+$body-color:                $gray-700;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              $primary;
+$link-color:                              $blue;
 $link-decoration:                         none;
 
 // Grid containers
@@ -100,7 +107,7 @@ $border-color:                $gray-200;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Mulish", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
@@ -114,7 +121,7 @@ $font-size-sm:                $font-size-base * 0.875;
 $line-height-base:            1.5;
 
 $headings-font-family:        null;
-$headings-font-weight:        700;
+$headings-font-weight:        800;
 
 $lead-font-weight:            400;
 
