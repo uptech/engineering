@@ -1,26 +1,115 @@
 {% macro footer() %}
-<footer class="footer text-muted">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 order-last order-lg-first">
-				<ul class="list-inline">
-					{% if config.extra.footer.info %}
-						<li class="list-inline-item">{{ config.extra.footer.info | default(value="Powered by AdiDoks") | safe }}</li>
-					{% else %}
-						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
-					{% endif %}
-				</ul>
-			</div>
-			<div class="col-lg-8 order-first order-lg-last text-lg-end">
-				<ul class="list-inline">
-					{% if config.extra.footer.nav %}
-						{% for val in config.extra.footer.nav %}
-							<li class="list-inline-item"><a href="{{ val.url | safe }}">{{ val.name }}</a></li>
-						{% endfor %}
-					{% endif %}
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background: #444D5A;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+			<img src="/img/us-icon.svg" height="48">
+            <p class="mt-4">
+              <a href="https://www.uptechstudio.com/" class="text-white">Uptech Studio</a> is a group of product, design, and technology enthusiasts. We partner with startups and rapid-growth companies to build, launch, and refine great software products.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Engineering Site
+            </h6>
+            <p>
+              <a href="/" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="/docs/welcome" class="text-white">Docs</a>
+            </p>
+            <p>
+              <a href="/blog" class="text-white">Blog</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Company Site
+            </h6>
+            <p>
+              <a href="https://www.uptechstudio.com/" class="text-white">Home</a>
+            </p>
+            <p>
+              <a href="https://www.uptechstudio.com/careers" class="text-white">Careers</a>
+            </p>
+            <p>
+              <a href="https://www.uptechstudio.com/blog" class="text-white">Blog</a>
+            </p>
+            <p>
+              <a href="https://www.uptechstudio.com/contact" class="text-white">Contact</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-12 col-lg-12 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3 small">
+              © 2016-2022 Copyright <a href="https://www.uptechworks.com/" class="text-white">UpTech Works, LLC</a>.</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Twitter -->
+            <a
+               href="https://twitter.com/uptechstudio"
+               class="m-1"
+               class="text-white"
+               >
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg><span class="ms-2 visually-hidden">Twitter</span>
+           </a>
+            <!-- Github -->
+            <a
+               href="https://github.com/uptech/"
+               class="m-1"
+               class="text-white"
+               >
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span>
+           </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+
 {% endmacro %}

@@ -331,3 +331,7 @@ body.dark .copy-status:active::after {
   display: block;
   color: $link-color-dark;
 }
+
+body.dark .logo {
+  .text { color: $white; }
+}
