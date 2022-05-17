@@ -22,7 +22,7 @@ url = "/blog"
 
 [[extra.list]]
 title = "Process"
-content = "Begin to understand the various processes we follow through the lifecycle of projects and why chose those processes."
+content = "Begin to understand the various processes we follow through the lifecycle of projects and why we chose those processes."
 
 [[extra.list]]
 title = "Best Practices"
@@ -30,11 +30,11 @@ content = "Years and years of learned best practices formalized into concise ref
 
 [[extra.list]]
 title = "Tools"
-content = "All the <b>custom</b> tools we have built, honed and specialized to usage of over the many years of projects."
+content = "All the <b>custom</b> tools we have built, honed and specialized to usage over the many years of projects."
 
 [[extra.list]]
 title = "Concepts"
-content = "Unlock the key secrets to quality & efficiency bu looking past the construction work and identifying key concepts and patterns."
+content = "Unlock the key secrets to quality & efficiency by looking past the construction work and identifying key concepts and patterns."
 
 [[extra.list]]
 title = "Organization"
