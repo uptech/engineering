@@ -157,7 +157,7 @@ If you are having difficulties remembering the git commit message format and wha
 	```
 2. Configure Git to use your new commit message template
 	```
-	$ git config commit.template ~/.gitmessage
+	$ git config --global commit.template ~/.gitmessage
 	```
 3. Make commits **without** (`-m`) and it will bring up the commit message template in your editor.
 
