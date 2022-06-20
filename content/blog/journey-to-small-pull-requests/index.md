@@ -34,7 +34,7 @@ We were following the [GitHub Flow][] and using feature branches, which in turn 
 
 ## Alternatives
 
-So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continious Integration Methodology and Trunk Based Development, as the others all seem to use feature branches.
+So now we knew that if we wanted our pull requests to be **small** we couldn't use feature branches. Instead we would have to scope our changes by a smaller concept than a feature. To help us identify which scoping concepts made the most sense we researched many other development workflows. The two that stood out as being different were the Continuous Integration Methodology and Trunk Based Development, as the others all seem to use feature branches.
 
 Both the Continuous Integration Methodology and Trunk Based Development are focused around getting small, logical, buildable, testable, not-necessarily complete changes into mainline as quickly as possible. They both see this as a core principle to support other developers on the team being aware of the work being done and enabling contribution and planning around it.
 
