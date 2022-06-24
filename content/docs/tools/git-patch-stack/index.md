@@ -21,12 +21,12 @@ Over the years we have determined that there are some pretty serious issues/draw
 * have extremely heavy overhead in managing feature branches that depend on other feature branches
 * often make the Git tree (history) extremely difficult to read & reason about
 
-[Git Patch Stack][] is an open source extension to Git and methodology we built to addresses all of the above issues by removing the need for the concept of feature branches and introducing a concept and local development workflow we call, [Git Patch Stack][]. You can install it by going to the GitHub repository and following the instructions in the README.
+[Git Patch Stack][] is an open source extension to Git and methodology we built to addresses all of the above issues by removing the need for the concept of feature branches and introducing a concept and local development workflow we call, [Git Patch Stack][].
 
 To understand why we developed this workflow and the journey we took to finally arrive at this workflow. Please see our post [Journey to Small Pull Requests][].
 
 For more details on how to use Git Patch Stack you can checkout out our blog post [How we should be using Git][]. This provides the background and conceptual thinking around Git Patch Stack while also providing an example.
 
-[Git Patch Stack]: https://github.com/uptech/git-ps-rs
+[Git Patch Stack]: https://git-ps.sh
 [Journey to Small Pull Requests]: /blog/journey-to-small-pull-requests/
 [How we should be using Git]: /blog/how-we-should-be-using-git/
