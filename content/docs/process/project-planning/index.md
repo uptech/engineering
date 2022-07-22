@@ -13,7 +13,7 @@ toc = true
 top = false
 +++
 
-The **Project Planning** phase is where take the knowledge we gained around the project scope and start planning out the high level technical details around the work. The goal of this phase is to do an initial relatively high level of planning to start to breaking down the technical problem space and identify unknowns, concerns, and blockers. This is generally achieved with the following artifacts of this process which are the responsibility of the Tech Lead to produce.
+The **Project Planning** phase is where we take the knowledge we gained around the project scope and start planning out the high level technical details around the work. The goal of this phase is to do an initial relatively high level of planning to start to breaking down the technical problem space and identify unknowns, concerns, and blockers. This is generally achieved with the following artifacts of this process which are the responsibility of the Tech Lead to produce.
 
 * Systems Architecture
 * Project Detailed Spec
