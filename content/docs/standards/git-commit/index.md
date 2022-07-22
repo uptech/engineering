@@ -73,11 +73,8 @@ We have built on the Official Git Commit Message Format to make sure we include 
 Short summary of change (the what) - 50 characters or less in
 length
 
-One or more paragraphs explaining the INTENTION of the change with
-valuable context. (Hard wrapped at 72 characters)
-
-One or more paragraphs explaining the REASON for the change with
-valuable context. (Hard wrapped at 72 characters)
+One or more paragraphs explaining the INTENTION & REASON of the
+change with valuable context. (Hard wrapped at 72 characters)
 
 One or more paragraphs explaining the APPROACH taken to attempt to achieve
 the INTENTION or a portion of the INTENTION.
@@ -135,14 +132,18 @@ If you are having difficulties remembering the git commit message format and wha
 
 1. Create your template file in a safe place with the following content. Common practice is to put it in `~/.gitmessage`.
 	```
+	
 	# Short summary of change (the what) ( <= 50 chars )
 
-	# INTENTION of the change with context (Hard wrapped at 72 chars) 
+	# INTENTION of the change & REASON for change
+	# (Hard wrapped at 72 chars) 
 
-	# REASON for the change with context (Hard wrapped at 72 chars)
+	# APPROACH taken & WHY in relation to attempting to achieve INTENTION
+	# (Hard wrapped at 72 characters)
 
-	# APPROACH taken to attempt to achieve the INTENTION or a portion
-	# of the INTENTION. (Hard wrapped at 72 characters)
+	# Deployment or Rollout Considerations
+
+	# Automated Tests considerations - if **NOT** why?
 
 	# Associated Ticket Identifers
 
