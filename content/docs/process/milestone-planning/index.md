@@ -19,13 +19,13 @@ The **Milestone Planning** process is basically the same process that we do in t
 
 When doing Milestone Planning you are scoping your thought process and in turn your created artifacts to a particular milestone. Therefore, you are creating a System Architecture Diagram that only focuses on the needs for this particular milestone. This is useful again to provide context but also useful to remove the noise of everything outside of the scope of this Milestone.
 
-## Scoped Protocol Specifications
-
-These protocol specifications again aren't inteded to be 100% accurate in terms of every piece of data. It is intended to be a tool to make the Tech Lead think through the core data that needs to be exchanged via this different channels and what those protocols would look like.
-
 ## Application Architecture
 
 The Application Architecture is where you start to visually layout how your team is going to build an application that will meet the needs of the goals. This again is about components, how data flows through them, and what components handle different types of processing.
+
+## Scoped Protocol Specifications
+
+These protocol specifications again aren't inteded to be 100% accurate in terms of every piece of data. It is intended to be a tool to make the Tech Lead think through the core data that needs to be exchanged via this different channels and what those protocols would look like.
 
 ## Infrastructure Diagram (depends on need)
 
