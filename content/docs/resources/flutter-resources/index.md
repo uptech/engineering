@@ -50,6 +50,27 @@ A predictable state management library for Dart
 	* Video 3 - Setting up Schemes in Xcode for iOS ([link](https://www.youtube.com/watch?v=gdqnxcV7_FY))
 		* When setting up Schemes in Xcode, make sure the **Shared** box is checked on each new scheme and that the generated scheme files (ex: dev.xcscheme) are included in the commit to the repo so the next dev can build the project with the correct settings. 
 
+## How do Flavors & DartDefine Flavor work?
+Our standard is to use DartDefine & Flavors in our Flutter apps. These allow us to configure our Flutter apps. 
+1) In launch.json we have `--flavor` and also a `--dartDefine Flavor=dev`. Are they both needed?
+2) Are there any issues with setting the flavor to `local` when working locally?
+---
+1a: Part `--flavor`: We need both of these in order to properly understand what flavor the app is in. They each are responsible for different things.
+* `--flavor` tells Flutter which native iOS/Android command to run when building. When a developer adds flavors to Android or iOS it changes how the commands work. By default without flavors, Flutter will call `assembleRelease` on Android to build the release version, flavors change this command and various others to include the Flavor information. 
+* We have `dev` and `production` flavors, so on Android this command is changed to `assembleDevRelease` & `assembleProductionRelease`. Similar things are in motion on iOS.
+* The `--flavor` command tells Flutter which command to use. So it is important to not modify this as builds will break, builds may still build/run but the `DartDefines` wont be present and the app will be in a broken state.
+
+1b: Part `--dart-define FLAVOR=dev`:
+* This allows the Dart Application to understand what flavor the app is on, since `--flavor` is NOT supported on web so we cant use it and have to use a DartDefine and `--flavor` does not supply the Dart App with any information "to my knowledge".
+* Using DartDefines is the recommended way to let the Dart Application to understand what flavor it is, similar to `NODE_ENV=DEV`. 
+* The `DartDefine FLAVOR` has the added benefit of letting us use logic flows for when the app is in Dev or Production mode. 
+* Two for one!
+
+2: `Flavor Change`: Changing `--flavor` to be `local` would break the builds and is NOT recommended.
+* We would have to add additional configurations to iOS/Android for not a lot of gain. 
+* We can include a `Local` Launch config which can be used to configure the Dev Debug builds to whatever one needs when working locally.
+---
+Hopefully this helps explain the details behind `--flavor` and `--dart-define FLAVOR=dev`
 
 ## VS Code Extensions
 
