@@ -43,6 +43,12 @@ Flow Charts again aren't required but are super useful when you have some comple
 
 The Tech Lead then puts together a Detailed Design Spec similar to the concept and structure of the Project Design Spec from before except scoped down to the concerns of this one milestone.
 
+## Unknowns
+
+Part of this process is identifying unknowns. We use these unknowns to guide us by effectively being blockers that need to be figured out to complete this milestone. We need to try and answer these unknowns as much as possible prior to the design review. However, some unknowns might be dependent on getting feedback from 3rd party vendors, etc. We should start those conversations with product and the 3rd party vendor ASAP, prior to the design review.
+
+This list of unknowns should be a working list of blockers that should get formalized as tickets and prioritized generally to be figured out ASAP. There are sometimes cases where you might want to not prioritize resolving one of these unknowns until later. This should be vetted with the project's principal engineer.
+
 ## Design Review
 
 Once completed the Tech Lead schedules a design review (same process as before) except this time it happens within the Squad. If the Squad feels they need external imput from people outside the Squad they are welcome to invite other people.
