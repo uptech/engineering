@@ -13,16 +13,16 @@ toc = true
 top = false
 +++
 
-Despite are dislike for estimates due to their inaccurate nature we still do
+Despite our dislike for estimates due to their inaccurate nature we still do
 them in some form because the reality of the situation is that we need to know
 relatively early in the process if we are going to be able to hit a timeline or
 not. Obviously we can't know this 100% because as we have stated estimates are
-very inaccurate. However, they can gives us at least a pulse to know if we
+very inaccurate. However, they can gives us a pulse to know if we
 think we are significantly going to miss a timeline. This is crucial as that
 pulse is what instigates pruning of non-crucial features and setting
 expectations appropriately with the client.
 
-To facilitate this we of course start with the iniital estimates from the
+To facilitate this we of course start with the initial estimates from the
 Discovery & Definition phase. However, things have likely changed since that
 time and the developers haven't thought about the complexities of each of those
 milestones.
@@ -33,23 +33,22 @@ puts together estimates based on the following thinking.
 
 ### Origination of Thinking
 
-Historically we generally focused on the concepts of **Complexity** and
-**Effort** in the past while putting together estimates and it was only our
-Milestone Planning that tought about unknowns/risk.
+Historically we have focused on the concepts of **Complexity** and
+**Effort** while putting together estimates and it was only our
+Milestone Planning that thought about unknowns and risk.
 
-However, relatively recently Theo dropped a video where he broke down on live
-stream what he has thought of for a system for estimates. It is very much in
-align with our current approach as it takes **Complexity** and **Effort** into
+However, relatively recently Theo dropped a video where he broke down what he
+has thought of for a system for estimates. It is very much in alignment with
+our current approach as it takes **Complexity** and **Effort** into
 consideration. However, beyond that it takes into account **Risk** and goes
-through the reasons for estimates a bit more analytically. Therefore, we have
-effectively adopted the naming from his proposed system and the why's with some
-small tweaks.
+through the reasons for estimating in a more analytical fashion. Therefore, we
+have effectively adopted his approach with some small tweaks.
 
 We also differ from his approach in that after thinking through these
-characteristics we then still estimate how long things will take (in developer
-days) using these characteristics as sourcing info. This is critical for us to
-understand how we are making progress in terms of our estimates so that we can
-make adjustments and manage client expectations appropriately.
+characteristics we then estimate how long things will take (in developer days)
+using these characteristics guidence. This is critical for us to understand how
+we are making progress in terms of our estimates so that we can make
+adjustments and manage client expectations appropriately.
 
 [Theo - Why Are Estimations So Hard??? PLANNING TASKS AS AN ENGINEER](https://www.youtube.com/watch?v=XhUAIVJ62dQ)
 
@@ -77,11 +76,10 @@ Effort, and Risk.
 
 When first getting a team started thinking in this way we have found that it is
 useful to often go down to the story level and document the **Complexity**,
-**Effort**, and **Risk** at the story level as it ends up being a forcing
-function to think about the complexities and risk. Then go back up to the
-milestone and produce the milestones **Complexity**, **Effort**, and **Risk**.
-Then you can look at the stories overall and validate your feeling for the
-milestone estimate and if it makes sense.
+**Effort**, and **Risk** as it ends up being a forcing function to think about
+the complexities and risk. Then go back up to the milestone and produce the
+milestones **Complexity**, **Effort**, and **Risk**. Then you can look at the
+stories overall and validate that your estmiate for the milestone makes sense.
 
 Once the devs start to get the feeling for thinking about **Complexity**,
 **Effort**, and **Risk** this process goes really quickly.
@@ -90,10 +88,11 @@ Once the devs start to get the feeling for thinking about **Complexity**,
 
 As we go through this process we are often running into **Risks** and most of
 the time you need to do some further research to understand and mitigate the
-risk. This is the perfect time to break those stories out.
+risk. This is the perfect time to break those tasks out.
 
 You can also see by doing so how breaking the research task out helps you to
-think about these characteristics for each of these stories.
+think about and adjust the characteristics for the story and it's associated
+research task.
 
 ## Example
 
