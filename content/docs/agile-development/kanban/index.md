@@ -41,4 +41,4 @@ We generally evolve these on our projects to some combination of the following c
 * **Accepted** - Issues that are accepted and ready for release.
 * **Released** - Issues that have been deployed to users.
 
-*Note:* The above columns are guidelines we use to stay in alignment with eachother. But if we are on a project where we feel like a couple of these columns aren't need and are just ritual we will get rid of those columns.
+*Note:* The above columns are guidelines we use to stay in alignment with each other. But if we are on a project where we feel like a couple of these columns aren't need and are just ritual we will get rid of those columns.
