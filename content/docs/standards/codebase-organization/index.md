@@ -17,7 +17,7 @@ top = false
 
 The following is the TLDR of what we do in terms of Codebase Organization here at [Uptech Studio][].
 
-* organize code according to architectue **not** types of architecture element types
+* organize code according to architecture **not** types of architecture element types
 * if in framework that does organize by architecture elment types
 	* follow that convention up until you reach natural boundary (e.g. `lib` folder)
 	* then switch to organizing by architecture
