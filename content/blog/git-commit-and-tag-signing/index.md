@@ -16,21 +16,21 @@ The more I thought about this, the more it concerned me, and the more it seemed 
 
 ## The Solution
 
-Coming from a security background, I knew that a digital signature could solve this problem. So, being familar with [GPG], an encryption and digital signing tool that is often used to digitally sign and encrypt emails, I decided to search and see if [Git] supported integration with [GPG]. Sure enough it does, specifically for signing commits and tags. Knowing this, the next step was to setup and configure my machine, which is running macOS Sierra Version 10.12.6 (16G29).
+Coming from a security background, I knew that a digital signature could solve this problem. So, being familar with [GPG], an encryption and digital signing tool that is often used to digitally sign and encrypt emails, I decided to search and see if [Git] supported integration with [GPG]. Sure enough it does, specifically for signing commits and tags. Knowing this, the next step was to setup and configure my machine, which is running macOS Ventura Version 13.0.1.
 
 ## How I Did It
 
-The following is a breakdown of the final set of steps I took to get [Git] and [GPG] functioning together. It took me a number of tries to get to this point, as numerous articles didn't seem to work for me with version 2.1.22 of [GPG], which is what I am using. It is also probably worth mentionining that I am using [Git] version 2.13.3
+The following is a breakdown of the final set of steps I took to get [Git] and [GPG] functioning together. It took me a number of tries to get to this point, as numerous articles didn't seem to work for me with version 2.3.8 of [GPG], which is what I am using. It is also probably worth mentionining that I am using [Git] version 2.38.1.
 
 ### Install Dependencies
 
 The first thing is to make sure that you have the necessary dependencies installed. I did this via [Homebrew], and recommend the same.
 
 ```
-brew install gnupg gpg-agent pinentry-mac
+brew install gnupg pinentry-mac
 ```
 
-The above installs `gnupg` (a.k.a. `gpg`) the tool set for digital signing, `gpg-agent` a support tool for `gnugp` to help securely manage your `gnugp` key's password while using it, and `pinentry-mac`, a tool to securely prompt and manage password/pin entry.
+The above installs `gnupg` (a.k.a. `gpg`) the tool set for digital signing, and `pinentry-mac`, a tool to securely prompt and manage password/pin entry.
 
 ### GnuPG Key Pair Generation
 
