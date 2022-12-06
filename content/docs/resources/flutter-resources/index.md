@@ -45,7 +45,7 @@ A predictable state management library for Dart
 
 * "Flutter — Separating Build Environment with Multiple Firebase Environment" - Damodar Lohani ([link](https://lohanidamodar.medium.com/flutter-separating-build-environment-with-multiple-firebase-environment-92e40e26d275))
 	* Video 1 - Setting up main_dev.dart and main_prod.dart environments ([link)(https://www.youtube.com/watch?v=DgGUtTUatDQ))
-		* We more commonly use env.dev and env.prod for environment variables, which differs from this method. However the next two videos will work with either setup.
+		* We more commonly use env.dev and env.prod for environment variables, which differs from this method. However, the next two videos will work with either setup.
 	* Video 2 - Setting up Flavors for Android ([link](https://www.youtube.com/watch?v=UZFIMRAWtgw))
 	* Video 3 - Setting up Schemes in Xcode for iOS ([link](https://www.youtube.com/watch?v=gdqnxcV7_FY))
 		* When setting up Schemes in Xcode, make sure the **Shared** box is checked on each new scheme and that the generated scheme files (ex: dev.xcscheme) are included in the commit to the repo so the next dev can build the project with the correct settings. 

@@ -13,7 +13,7 @@ toc = true
 top = false
 +++
 
-We are big believers in Agile methodologies. However we don't prescribe to strict Scrum. Instead we use Kanban as we feel it better aligns with the fluidity and agileness necessary with the earlier stage companies we work with.
+We are big believers in Agile methodologies. However, we don't prescribe to strict Scrum. Instead we use Kanban as we feel it better aligns with the fluidity and agileness necessary with the earlier stage companies we work with.
 
 ![Example Kanban Board](example-kanban-board.png)
 
@@ -21,7 +21,7 @@ In Kanban the columns on the board represent the prioritized queue of items that
 
 We often use work in progress limits for each column to guide us around capacity issues and enforce prioritization.
 
-The Kanbana boards provide all stakeholders with a clear view into the development pipeline. Boards can be customized via grouping and filtering.
+The Kanban boards provide all stakeholders with a clear view into the development pipeline. Boards can be customized via grouping and filtering.
 
 ## Columns
 
