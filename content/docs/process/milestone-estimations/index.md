@@ -91,7 +91,7 @@ the time you need to do some further research to understand and mitigate the
 risk. This is the perfect time to break those tasks out.
 
 You can also see by doing so how breaking the research task out helps you to
-think about and adjust the characteristics for the story and it's associated
+think about and adjust the characteristics for the story and its associated
 research task.
 
 ## Example

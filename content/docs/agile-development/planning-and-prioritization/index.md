@@ -15,7 +15,7 @@ top = false
 
 Given that we don't do Scrum. We don't really do formal "sprint planning". In fact we don't actually believe in the constraint of a "sprint".
 
-Instead we focus on "roadmap planning" and "iteration planning". The destinction is that we do plan for an iteration (roughly a week or two out). However that planning simply funnels into the Kanban board as to what we are targeting working on. If that changes as more information comes in it isn't a problem as we are just working down through the prioritized columns. This differs from the concept of formal sprints where a sprint's tickets are usually locked in until the following sprint.
+Instead we focus on "roadmap planning" and "iteration planning". The destinction is that we do plan for an iteration (roughly a week or two out). However, that planning simply funnels into the Kanban board as to what we are targeting working on. If that changes as more information comes in it isn't a problem as we are just working down through the prioritized columns. This differs from the concept of formal sprints where a sprint's tickets are usually locked in until the following sprint.
 
 We have a **weekly** Planning & Prioritization meetings.
 

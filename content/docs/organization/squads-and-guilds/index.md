@@ -13,7 +13,7 @@ toc = true
 top = false
 +++
 
-At Uptech Studio we organize ourselves in a similar fashion to Spotify with Squads & Guilds. However how we define Squads & Guilds is a bit different.
+At Uptech Studio we organize ourselves in a similar fashion to Spotify with Squads & Guilds. However, how we define Squads & Guilds is a bit different.
 
 ## TLDR
 

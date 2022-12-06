@@ -38,9 +38,9 @@ As described above we value Outside-In Development from [BDD][] as a way of maki
 
 ## Test First
 
-We also strongly abide by the concept of "Test First", the practice of writing a failing test against a nonexistent idealized API and then following the Red, Green, Refactor process to iterate the test & implementation to it's final state.
+We also strongly abide by the concept of "Test First", the practice of writing a failing test against a nonexistent idealized API and then following the Red, Green, Refactor process to iterate the test & implementation to its final state.
 
-The primary reason we value "Test First" so much is because the practice of thinking about what the ideal API would look like and using the first iteration of writing the test as a tool for this has huge positive impacts in terms of the application architecture and it's maintainability over time.
+The primary reason we value "Test First" so much is because the practice of thinking about what the ideal API would look like and using the first iteration of writing the test as a tool for this has huge positive impacts in terms of the application architecture and its maintainability over time.
 
 Beyond that it also benefits in helping to make sure that the tests fully cover the implemented code. If instead you were to for example to write a function first and then go back and write the test after the fact. You would discover over time that it is very easy to miss cases and end up with a test suite that doesn't fully cover all the cases.
 

@@ -28,6 +28,6 @@ There are few options.
 
 We prefer and will use **HTTP Header based versioning with Media Types** as it is the most robust solution that generally also has support built into libraries or frameworks.
 
-The **HTTP Custom Headers versioning** is technically more robus as there are no standards around it. However it then requires more custom work to do be done for clients interacting with it.
+The **HTTP Custom Headers versioning** is technically more robust as there are no standards around it. However, it then requires more custom work to do be done for clients interacting with it.
 
 The **URL based versioning** is **NOT** robust because it requires either duplicating code, or implementing some sort proxying, etc. to deal with situations where you want to create another version of all the routes. It also makes it harder to mix them as well in terms of code management.

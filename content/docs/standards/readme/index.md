@@ -24,7 +24,7 @@ We require `README.md` files in our repositories so that people can understand t
 
 ## README.md Content
 
-The following is an example of a `README.md` file and it's content. Use this as a template.
+The following is an example of a `README.md` file and its content. Use this as a template.
 
 ```Markdown
 # git-ps - Git Patch Stack

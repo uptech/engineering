@@ -57,7 +57,7 @@ We have found it is also a useful communication tool for some automation tasks. 
 
 ### Official Git Commit Message Format
 
-Git as a tool has guidelines for commit messages to work best with git and it's various tools. This format is as follows:
+Git as a tool has guidelines for commit messages to work best with git and its various tools. This format is as follows:
 
 ```
 Short summary of change (50 charecters or less in length)

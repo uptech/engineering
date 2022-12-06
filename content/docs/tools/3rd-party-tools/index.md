@@ -17,7 +17,7 @@ The following is a breakdown of 3rd Party tools that we use and a small bit of i
 
 ## Jira
 
-[Jira](https://www.atlassian.com/software/jira) is our project management tool of choice. There are a lot of things we don’t like about Jira. However it is still the leader in our industry and therefore we need to know it well and have as part of our playbook how best to use it. Thus we use it for all of our work here. Also it has features that most of the other solutions don’t have that we think are valuable inspite of the other pain points.
+[Jira](https://www.atlassian.com/software/jira) is our project management tool of choice. There are a lot of things we don’t like about Jira. However, it is still the leader in our industry and therefore we need to know it well and have as part of our playbook how best to use it. Thus we use it for all of our work here. Also it has features that most of the other solutions don’t have that we think are valuable inspite of the other pain points.
 
 When you are onboarding you should receive an invite to join. If you didn’t contact your manager.
 
@@ -59,7 +59,7 @@ This is a spiked side project that Drew De Ponte & Anthony Castelli built and sh
 
 ## Paw
 
-[Paw](https://paw.cloud/) is an HTTP based API development tool for macOS. Similar to Postman which has gain significant popularity. But, we prefere Paw and it’s features and therefore have selected to use it here.
+[Paw](https://paw.cloud/) is an HTTP based API development tool for macOS. Similar to Postman which has gain significant popularity. But, we prefer Paw and it’s features and therefore have selected to use it here.
 
 ## Google Workspace
 
