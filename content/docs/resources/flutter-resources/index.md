@@ -72,6 +72,25 @@ Our standard is to use DartDefine & Flavors in our Flutter apps. These allow us 
 ---
 Hopefully this helps explain the details behind `--flavor` and `--dart-define FLAVOR=dev`
 
+## Feature Flagging
+
+* "Growthbook" - [link](https://docs.growthbook.io/)
+
+### Canary Testing with Growthbook
+
+Our [Flutter Growthbook Wrapper]() makes it easy to do canary testing and version baselining with Growthbook
+
+In the Growthbook GUI:
+
+* Add wanted attributes (for the canary testing example, use id and set it as identifier) [link] (https://docs.growthbook.io/app/features#targeting-attributes)
+
+* Add an override rule:
+`if id is in the list` (add desired tester ids)
+[link] (https://docs.growthbook.io/app/features#override-rules)
+
+Using the Uptech Growthbook Wrapper to set attributes: [link] (https://github.com/uptech/uptech-growthbook-sdk-flutter#set-attributes)
+
+
 ## VS Code Extensions
 
 ### [Dart](https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-codes)
