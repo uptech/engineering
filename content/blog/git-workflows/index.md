@@ -1,6 +1,6 @@
 +++
 title = "Git Workflows"
-description = "An exploration of the Feature Branch, Classic Continuos Integration, Stacked Branch, and the Patch Stack workflows."
+description = "An exploration of the Feature Branch, Classic Continuous Integration, Stacked Branch, and the Patch Stack workflows."
 date=2023-10-26
 draft = false
 template = "blog/page.html"
