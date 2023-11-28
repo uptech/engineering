@@ -57,5 +57,7 @@ We hope these improvements to Quick Filters will have a big impact on peoples da
 
 As always, we’d love to hear from you.
 
+**Need help with an App (mobile, web, desktop, etc.)?** [Uptech Studio](https://uptechstudio.com), the creators of Pullwalla, are here to help. Just reach out to [info@upechstudio.com](mailto:info@uptechstudio.com), and we are happy to explore how we might work together.
+
 Cheers,
 The Pullwalla Team
